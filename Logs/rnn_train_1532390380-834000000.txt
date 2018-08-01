@@ -1,0 +1,122 @@
+C:\Users\yichu\Anaconda3\envs\tensorflow\python.exe "C:\Program Files\JetBrains\PyCharm 2018.1.4\helpers\pydev\pydev_run_in_console.py" 54601 54602 "C:/Users/yichu/Documents/Projects/Deep Learning/tensorflow-rnn-shakespeare/rnn_play.py"
+Running C:/Users/yichu/Documents/Projects/Deep Learning/tensorflow-rnn-shakespeare/rnn_play.py
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['C:\\Users\\yichu\\Documents\\Projects\\Deep Learning\\tensorflow-rnn-shakespeare', 'C:/Users/yichu/Documents/Projects/Deep Learning/tensorflow-rnn-shakespeare'])
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.3.1 -- An enhanced Interactive Python. Type '?' for help.
+2018-07-24 09:36:15.837613: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2018-07-24 09:36:16.173889: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1392] Found device 0 with properties: 
+name: Quadro M2200 major: 5 minor: 2 memoryClockRate(GHz): 1.036
+pciBusID: 0000:01:00.0
+totalMemory: 4.00GiB freeMemory: 3.33GiB
+2018-07-24 09:36:16.174527: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-07-24 09:36:16.917261: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-07-24 09:36:16.917768: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-07-24 09:36:16.918103: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-07-24 09:36:16.918593: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+INFO:tensorflow:Restoring parameters from checkpoints/rnn_train_1532390380-462000000
+etter (SMC) is discussed.\n"]
+['  The problems of the experimental resonance and treatment of a simple model with the complex mome
+nt of a single state in the compact string theory. The calculations of thes analogue is to describe 
+the computation of the electric fields in the strong constraints in the spectral state and the compl
+exity of the spectrum in any dimension and the standard model with the state in the completely more 
+general set of states is constrained. ', 'Comment: 23 pages, LaTeX, 10 figures
+We show how the statis intrinsically contained in a complete complex space is discussed. The results
+ are considered in the case of two cases of any substantial subset of the continuum state and the sp
+ectrum of\nthe structure of the commutator and the complete set of a family of compact subgroups in 
+the complete compact space of complete spaces of compact spherically complex space on the set of a c
+omplex complex space. The construction of an algebraic construction of this metric is a subset of th
+e space of complex complex spaces. This paper introduces a new computation of the commutative spectr
+um of the convex set of a set of complexes. The methods are compared with the study of the construct
+ion of the category of complex complex spaces is a finite set of continuous classes of algebraic sub
+groups of the complex surfaces of a closed complex space with a complex subgroup and the set of comp
+lex complex compactifications of the sum of the canonical subgroup of the set of closed subgroups. '
+, 'Comment: 19 pages
+We study a model in the formula of a set of state structure of the spacetime of the space with a com
+plete complex complex space of algebras in the set of algebraic states. The method is a combinatoria
+l approach to the construction of a compact complex complex of the set of all such that the set of a
+lgebraic complexities is an infinite dimensional space on a simple complete complex constant of the 
+space of the set of complex spaces. This is the set of complete complex systems in terms of the stat
+e of any complex complete special interpretation of an infinite subgroup algebra. We show that the c
+onstruction of the set of a set of complete sets of complex surfaces of a complex commutative contra
+st to the complex subgroup of the spectral spaces. We also prove that the control of an interval of 
+a finite dimensional subgroup is the set if the case with the complex complexity of the space of a s
+imple summary of the compact general category of the complex complex space of a complex subgroup of 
+the space and the spectral subset of the special case of a set of complete commutators of the spectr
+al subset of an algebraic constant on a center-of model with the complete constant subgroup of the c
+ontinuum continuous space and the space of a compact subspace in the set of compact complex spaces. 
+We also present a self-similar study of the state of a set of speeds of two sections of the category
+ of continuous continuous contributions. This paper is a self-sum of the case of a convex semi-invar
+iant compact set of constants. These\napproaches to the construction of these states are constructed
+. ', 'Comment: 10 pages
+We prove that the set of continuous contractions of a constant spacetime is analogous to a class of 
+commutative spaces of special cases on the space of algebras of the spectral subsets of a commutativ
+e space of considered and complete set of subsequent sets of subsequent symplectic curves. ', 'Comme
+nt: 10 pages, LaTeX, no figures
+We prove that the set of classes of continuous complex surfaces in terms of the commutative construc
+tion of the space of all subset of a communication into two complex curvatores on a compact surface 
+with a simple sum of the subset of the space of algebraic structures in a commutative continuous spa
+ce. We show how thes are compared to the convergence of the case of a finite dimension and their sem
+i-compact category of complexity in the case. The construction of a complex complex set, we compute 
+the construction of the spacetimes of a simple set of spectrum of the complex surface of the complex
+ complex space of the containing a contact space of such theory. We also provide an approach to the 
+case of a commutator of a complex curve of the categorical subset of a compact space of some orders.
+ This proposed a combinatorial computation of the completion of an integral of the complete set of a
+lgebras. While a compact subgroup of the compact sphere in terms of a complex curve of a singular su
+bset of a finete density operator is a compact subgroup of the spectrum. The condensate is also disc
+ussed. ', 'Comment: 10 pages
+We present an extension of a non-local complex measure for the complex spectrum of a set of compacti
+fications of the space of a factorisation of the convex space of a finite size subspace of the const
+ructed space of the case of twisted spacetimes. We also discuss the communication relations of the c
+onstruction of a class of commutative complex symmetry, and a compact completely complete compact co
+mplex space in any special case. We also show how the condition of the special case of the spacetime
+ of the space of twisted models of the set of interactions are derived. ', 'Comment: 10 pages, LaTeX
+This paper is a complex set of algebraic computer system in a simple complex subspace. The case of t
+he state interpretation of the standard Monte Carlo simulations of the convex condition in the case 
+of a complex surface of the special case of the set of spacetimes are constructed. The results of th
+e proposed algorithm in this paper is to show that the stabilized component of an interaction in the
+ complex space of a contact complex interaction is studied. This paper is to study the construction 
+of the category of commutativity of these complex complexity. The construction of a set of infinite 
+conservations of this conjecture in the second part of the second section of a certain complex surfa
+ce of a set of subspaces. These constructions allow us for a simple condition of the category of alg
+ebraic structures on the specific complex space of the constant space of the space of all such a sub
+space. We also show that the set of constants of any continuous set $X$ is an external complex of $G
+$. We also study the construction of the set of commutative construction is analyzed in the case of 
+the convex complex set $X$ of $G$. We show how the construction of a simple module interaction is an
+alyzed in a compact set of complex systems of algebras in the set of compact surfaces of the space o
+f algebras. The construction of a compact category of continuous compact subgroups of the category $
+\\mathbb{R}^{\\mathbb R}$ and the stable\ncube of the set $X$ is the category of $\\lambda$ algebrai
+c compact subgroups into a constant $\\mathcal M$ and the set of $n$ complex constants are calculate
+d. This is\nthe second one of $V$. The results are compared with the construction of the complex con
+straints on $G(X)$. The considerable constructions of these conditions are considered. This interpre
+tation of the stability of the construction of the state is a consistent complex communication and a
+ny consistent\ncondition. This interpretation is a consequence of the convolutional case of the stat
+e of the constraints in the standard model which is a simple computational computation of the comple
+x symbols of a complex complex complex in $R$. The calculations\nand a simple construction of the st
+ability of the structure of $\\mathcal{B}_n$ and the complexity of the compact subgroup $\\mathbb{R}
+$ and to a completely constant complex curve of $G$ in the space. We show that this is\nan integer o
+f $\\mathbb C^n$. We show that this introduction is the same analogous work on the commonly disconti
+ous\nconstruction of the complete space $X$. We show that the compact complexity of two different co
+nstants on $G$ in the space of $\\mathbb{C}$ algebras and the category of $\\mathcal{M}$ in the case
+s of $G$ and $\\mathbf{C}^{2}$. This is a summer integration. This provides the state of any compact
+ complex set of $\\mathbb{R}^n$ in $\\mathbb{C}$ and the space of the complexity of the constraints 
+on $\\mathbb{R}$. We also prove the construction of the second problem of $\\mathbb C^{1}$ in $\\mat
+hbb{C}^n$ and $\\mathcal{E_n$ and $\\mu_{\\mu}$ into a finite degree of fields $V$. The computed con
+stant is an explicitly the\ncomplete continuous set $X$ on the space $\\mathcal{E}$ as a continuous 
+set of $\\mathbf{R}$. We also prove that the set of continuous sets of the complex continuous subgro
+ups of $G$ and $\\lambda$ and $\\le \\mathbb{R}^n$ and $(\\mathcal{E}$ in $\\mathcal M$ and $\\phi_{
+\\pi \\in X$ is an important construction. To apply our results to these computations, the set of co
+ntinuous sets of the stable subgroups $V$ and $\\mathcal{S}_{\\mu}$. We show that in the compact spa
+ce of $\\mathbb C^2 $ are considered. The results of these strategies and calculations for the const
+ant $n$ is the set of $\\mathcal M$ as an external manifold is a constraint of the category of $\\ma
+thbf{C}$. The construction of these two constants is a compact subgroup $\\mathbb{R}^{n}$ of the set
+ $X$ of the complex space $X$ as a function of $G$. The condensation of these commutative spaces and
+ the spacetime of the complex complex subsets $\\mathcal{E}$ and $\\mu_\\mathbf{R}$ are defined and 
+its subset of this\nmethic is also given. ', 'Comment: 19 pages
+The computer structures of the statistics of a complete constant algebra is a solution of the space 
+of a finitely many subsequent complex space which is a compact subset of a completely compact comple
+x complex on the complex space of all subgroups. This is a conjecture of Monteen and Sherer and Shan
+ner and Moreover, the construction of a complex set of complex complex spaces of complexity of the c
+onvex space and any complex subset of the semi-simple set in the construction of an ext
+Process finished with exit code -1

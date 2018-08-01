@@ -1,0 +1,60 @@
+C:\Users\yichu\Anaconda3\envs\tensorflow\python.exe "C:\Program Files\JetBrains\PyCharm 2018.1.4\helpers\pydev\pydev_run_in_console.py" 53921 53922 "C:/Users/yichu/Documents/Projects/Deep Learning/tensorflow-rnn-shakespeare/rnn_play.py"
+Running C:/Users/yichu/Documents/Projects/Deep Learning/tensorflow-rnn-shakespeare/rnn_play.py
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['C:\\Users\\yichu\\Documents\\Projects\\Deep Learning\\tensorflow-rnn-shakespeare', 'C:/Users/yichu/Documents/Projects/Deep Learning/tensorflow-rnn-shakespeare'])
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.3.1 -- An enhanced Interactive Python. Type '?' for help.
+2018-07-24 08:35:09.860531: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2018-07-24 08:35:10.184813: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1392] Found device 0 with properties: 
+name: Quadro M2200 major: 5 minor: 2 memoryClockRate(GHz): 1.036
+pciBusID: 0000:01:00.0
+totalMemory: 4.00GiB freeMemory: 3.33GiB
+2018-07-24 08:35:10.185358: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-07-24 08:35:10.656499: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-07-24 08:35:10.656855: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-07-24 08:35:10.657091: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-07-24 08:35:10.657436: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+INFO:tensorflow:Restoring parameters from checkpoints/rnn_train_1532390380-462000000
+attir (SNS) in the framework of the structure of the space of spectral conditions. The computational
+ case of this problem, we study the construction of the complex contribution to\na commutator and an
+ intrinsic space with the spacetime is a set of compact subsets of a family of classes in the contex
+t of the space of all contacts. ', 'Comment: 10 pages, LaTeX, no figures
+We present a method to the study of two-dimensional symmetry breaking of the commutative space of a 
+family of spacetimes. The case of two compact subsets of the completely compact spacetime are studie
+d. These are also discussed. ', 'Comment: 10 pages
+We present a novel method to compute a module of a semi-self-consisted complex system with the contr
+ibution of the strongly complete spin symmetry in the case of a simple metric. We also show that in 
+any compact case of two dimensional spaces of the superconducting space is considered in the complex
+ity of a complex system on the complex space. We show that this is a construction of the spacetime i
+n the completely small condition of the space of algebras. The constructive example in the contribut
+ion to the conditions of the constraines of a set of substrate states is defined by a set of all sta
+tes. The model is that the construction of the state is a constant spacetime of the constant curves.
+ The complications are investigated in the case where the construction is the same and complex syste
+m in a convex problem of the state of the category and the construction of the categorical commutati
+ve space. We also show that the controlled structure of an infinite commutative space is carried out
+ as the category of the complex space of this conjecture. The method is a conjecture of Monteellar a
+nd Seltan and Sherenker and Many and Marker theorems. ', 'Comment: 23 pages, LaTex, no figures
+The continuum space of the complex complexity is analyzed in the context of the complex complex spac
+e with the spatial degree of freedom of a class of compact complete compact spacetime symmetry. The 
+calculated solution is a summary of an extension of the calculated case on the space of a finite siz
+e of the standard model. We show that the calculations of the structure of a set of complex systems,
+ and the complex stability of the conserved space is important for an expected constant of the state
+s. The effective theory in an approximate degree of strings in a complex system is derived in the fi
+rst component of the spectral space of a single string theory within the conductivity of a complex m
+omentum space which areses in the computer model. We show that in the contrast of the case of a cons
+tant space is shown to be the catalog of a compact space of spaces. The second part of this paper is
+ to study the complex consistency of the state of the stability of an analogue of the case of an ext
+ension of the commutative set of algebras is discussed. ', 'Comment: 10 pages
+The relevance of a new method for the complex component of these sets is constructed. The case of th
+e stable complex complex surface of an infinite dimensional matrices on the space of algebraic struc
+tures in a complex subset of a finite set is considered. This invariant contribution is a single cha
+rge in the context of a complex state with a single particle state. We argue the existence of a comp
+ared to a strong coupling between two-photon spectra of the magnetic field and the spectrum of the s
+tars independent of the spectrum of the spin decay rate (NGC) with the component of the component of
+ the spin containing a single phase. The effect of this method is a similar study of the state of th
+e energy distributions of the entanglement in the spectra of the structure of the stars. We found th
+at in an anti-spectrum of\nthe spectral state is studied. The existence of a complex state on a semi
+-single-star is a consequent active composed of massive spins in this state with a complete state of
+ the stars in the compact different complexity.\n', 'Comment: 10 pages, 10figures']
+

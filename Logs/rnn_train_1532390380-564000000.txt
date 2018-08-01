@@ -1,0 +1,117 @@
+C:\Users\yichu\Anaconda3\envs\tensorflow\python.exe "C:\Program Files\JetBrains\PyCharm 2018.1.4\helpers\pydev\pydev_run_in_console.py" 54519 54520 "C:/Users/yichu/Documents/Projects/Deep Learning/tensorflow-rnn-shakespeare/rnn_play.py"
+Running C:/Users/yichu/Documents/Projects/Deep Learning/tensorflow-rnn-shakespeare/rnn_play.py
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['C:\\Users\\yichu\\Documents\\Projects\\Deep Learning\\tensorflow-rnn-shakespeare', 'C:/Users/yichu/Documents/Projects/Deep Learning/tensorflow-rnn-shakespeare'])
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.3.1 -- An enhanced Interactive Python. Type '?' for help.
+2018-07-24 09:27:38.819965: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2018-07-24 09:27:39.155789: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1392] Found device 0 with properties: 
+name: Quadro M2200 major: 5 minor: 2 memoryClockRate(GHz): 1.036
+pciBusID: 0000:01:00.0
+totalMemory: 4.00GiB freeMemory: 3.33GiB
+2018-07-24 09:27:39.156429: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-07-24 09:27:39.716247: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-07-24 09:27:39.716729: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-07-24 09:27:39.717050: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-07-24 09:27:39.717524: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+INFO:tensorflow:Restoring parameters from checkpoints/rnn_train_1532390380-462000000
+etter (RSS). We show that in a comparison with the constructions are calculated and the consequences
+ of superconducting string theory and\ntheir experiments which are in the context of these states. '
+, 'Comment: 10 pages, LaTeX, 10 figures
+The present paper is to study the effect of a complex state of the continuous spacetime on the space
+time in the case of two complex constants and an important relation between spacetime self-adjoint s
+ubsequently in the space-time of a single charge in the standard Monte Carlo simulation and the stat
+e of the spectrum of the characteristic formula for the contribution of the spacetimes. The contribu
+tion of the computed space of the complex states of the stationary space is discussed. ', 'Comment: 
+10 pages
+We study the extension of the complex system of a constant continuous model with a certain complex c
+onstant. We show that, in the presence of an explicit consequence, we prove that the semiconductor i
+nteracting with these complex symmetry breaking is to construct two compact spaces of the completion
+ of the commutative complexity of the complex space of all subgraphs. ', 'Comment: 10 pages, Latex, 
+no figure
+We study the extreme solutions of the completely supersymmetric space of spatial symmetry in the con
+text of the complex space of the space of some complicating topologies. We show that the states are 
+interpreted in this case to the state of the category of a simple subgroup. This is the set of compl
+ex symmetric structures in the complete contribution of the complex space of algebraic complex space
+s on a complex space of spaces. The communications of the spectrum is derived for a convex subgraph 
+of a complex compact surface.\n"]
+['  The partial description of the space of a contact module, we study the constant of the spectral 
+curve in the category of algebras of a contact constant on a commutative space. We show that in a co
+nsequence of the case of a complex curve of the complex constructions is a semi-construction of two 
+dimensions of the canonical space of the second order category and their sum of the complex space of
+ algebras.\n"]
+['  The proof of the construction of the standard model of a compact complex subgroup of the compact
+ified sphere is given to a set of such surfaces in the category of classes of subsets of the sum of 
+the sum of a central continuous contraction of the category of compact subsets. These are an integra
+ted contributions to\nthe complexity of the spectral symmetry of two dimensions. The method is a sel
+f-constrained self-similar structure of the stability. We also present and compute the construction 
+of the continuous complexity in the state and analytic state in the complete case. We argue that the
+ computational complex in the continuous complex set of two complexes and their cases. ', 'Comment: 
+10 pages
+The contribution to the spectral structure of the contribution of the stands of a simple model with 
+a certain subset in a simpler construction of a compact spacetime is discussed. ', 'Comment: 10 page
+s
+We show that the specific set of algebraic states of a set of infinitesimal constants of the complex
+ surface in this set of algebras is a subset of these constants. We are to combine the category of a
+ set of algebras of a complex cubic complex of the communication of a compact complex construction o
+f the compact subgroups in a single space with a complete complex space. The method is to show that 
+if the sets of\ncommutative sets is commuted in a compact complex space in the compact set in the sp
+ecial linear compact set. We also present an application of these and\nanalogous results of\nthe ana
+lytical experimenta leading to an interpretion of the structural constraints on the stable complexit
+y of the space with a simple constant complex theory of commutative complex space and the space in a
+ commutative case. The conditions for the convex problem is a complete and common solutions to the s
+tructures of a set of spaces. The call components are investigated and interesting construction of t
+he set of two different compactifications of the complex convex complexity. We study the computation
+ of the state of these constraints, is a complex convergence of the speed of an extension of the com
+mutative spacetime of the case of the complex complex specific complications. This is analyzed. The 
+constructions are investigated and the computation of the complete set of a finite dimensional curve
+ is the same that the complexity of the category of a complex surface is a semi-interacting subset o
+f a finite dimensional subspace of a set of specific categories. This provides an explicit formula o
+f the construction of\nsubstructures on a finite dimensional semi-constant compact subgroup of a set
+ of special conditions in a consection. This\nproperty is a second order construction of the constru
+ction of a set of subsets of a finete subspace. We show that the construction is to calculate the co
+nstruction of this method in this case. ', 'Comment: 23 pages
+The results of this approach and a simplified analysis of the statistical mechanical statistical mod
+el is described. ', 'Comment: 20 pages, 1 figure, talk given at the International Conference on   Ph
+ysics,   September 2003
+These are intrinsic and integral experiments to treat the effect of the spectral structure of a sing
+le spin contribution to the strong couplings of the strong energy of the structure and a strong coup
+ling between the electron states and a single state of the spin state of the charged state and the e
+lectronic properties of the state and the spin channel in the context of the spin-spin system in the
+ context of the experimental results. ', 'Comment: 20 pages, 3 figures, submitted to Phys. Rev. B Li
+ttle
+We present an approach to the\nconstruction of a set of problems of a compact space with a finite si
+ze of the space of algebras is discussed. ', 'Comment: 10 pages, 10 figures
+We study the construction of the continuous spacetime of a complex subset of a complete communicatio
+n is calculated in a set of special cases. The cases are investigated into the computer statistical 
+computations of the spacetime and the space is compared with the case of two dimensional\nspheres an
+d their computation of the complex space of algebras. ', 'Comment: 20 pages, LaTeX, no figures
+We show that in the context of a compact case of the subspace of a semi-compact space of constant cu
+rves, where the construction of the complex structure is a semi-classical continuous continuous comp
+lex of the spacetime of the spacetime. The second part of this paper is to study a nonlinear structu
+ral constraint on\nthe spatially compact control of a compact subgroup. The method is to construct a
+ non-linear symmetric space of all speed of spacetimes in any compact class of complex surfaces. The
+ construction is the called an analogous to the set of a complex set of complex complexity and in th
+e case of the construction of the compact spacetime in the continuum space on a set of special cases
+ of a finite sime complex in terms of the set of constructions of a complete subset of the compact c
+omplex space of algebras on a compact space with the compact spherically compact surfaces of the sum
+ of the space of a simple complex complex of the space and the complete set of complex spaces.\n']
+['  We prove that a family of complete constants of the complex space in a certain class of spaces o
+f space in the set of specific commutative subgroups in the set of constants. The main result is tha
+t the sets of algebraic construction of the commutative conditions is analyzed in the construction o
+f the statistical compuner and the commutative case. The model is then investigated in a simple cons
+equence which is the computation of an algebraic symmetries in the case where a compact constant con
+stant is an important case. The meaning of the stability of the construction is a second property of
+ the structural desirable and the case of a compact compact subgroup of a certain commutative space 
+of solutions of the compact subset. We also study the existence of these structures and the complete
+ly compact subgroups of the complex complex of the common space. The construction of this proof is t
+he case which is the case of the set of constraints on the categorical complexity of the spectrum of
+ the set of complex subgroups of this system. This is a conjecture on the second order approach to t
+he standard Model of the category of algebraic states in terms of the spectral set of a set of algeb
+ras of the constant constant on a closed subgroup of the space of compact surfaces on the space. We 
+also prove that if any commutative space of the set of complete sets in terms of an integral integer
+ an algebraic space of commutators. This is an interest in the case of the complex spectra of the co
+mpact subgroups on a complex space with an algebraic continuum of a compact spacetime. These algebra
+s are investigated in terms of the section of the complexity of the complete sets of a semi-comp
+Process finished with exit code -1
