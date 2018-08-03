@@ -1,0 +1,106 @@
+C:\Users\yichu\Anaconda3\envs\tensorflow\python.exe "C:\Program Files\JetBrains\PyCharm 2018.1.4\helpers\pydev\pydevconsole.py" 59304 59305
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['C:\\Users\\yichu\\Documents\\Projects\\Deep Learning\\dlproject', 'C:/Users/yichu/Documents/Projects/Deep Learning/dlproject'])
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.3.1 -- An enhanced Interactive Python. Type '?' for help.
+PyDev console: using IPython 6.3.1
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)] on win32
+runfile('C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models/model_1_testing.py', wdir='C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models')
+encoded shaped: (52741497,)
+(LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>),)
+Tensor("one_hot:0", shape=(1, 1, 96), dtype=float32)
+<tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x000001C5AF89D278>
+X shape: Tensor("Reshape:0", shape=(1, 512), dtype=float32) and W shape: <tf.Variable 'softmax/Variable:0' shape=(512, 96) dtype=float32_ref>
+WARNING:tensorflow:From C:\Users\yichu\Documents\Projects\Deep Learning\dlproject\models\CharRNN.py:122: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+See @{tf.nn.softmax_cross_entropy_with_logits_v2}.
+2018-08-02 10:57:34.840480: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2018-08-02 10:57:35.040226: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1392] Found device 0 with properties: 
+name: Quadro M2200 major: 5 minor: 2 memoryClockRate(GHz): 1.036
+pciBusID: 0000:01:00.0
+totalMemory: 4.00GiB freeMemory: 3.33GiB
+2018-08-02 10:57:35.040686: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-02 10:57:35.413832: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-02 10:57:35.414119: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-02 10:57:35.414305: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-02 10:57:35.414642: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+INFO:tensorflow:Restoring parameters from checkpoints\i10600_l512.ckpt
+We88^(~-*g~r<M~4lGy<#G06m<p~6<~p6<0KG~sr46m<rK pvrKGp~r#G~6<4G#Gp46<0~4m~MG4G#`6<G~4lG~vmpG~m2~4lGy<`m#Elm`mEK~r<M~G22Gv46TG~vmEsK6<0~4m~p6`EKr46m<}~r~Mm`r6<~m2~4lG~46`G~r<My<rK4m#6<0~rp~4lG~pEVpG,EG<vG~6p~plm5<~4m~vm`sK6vr4G~4lG6#~s#mvGpp}~4lr4~r#Gp~4lr4y<4lG~vm<TG#0G<vG~m2~4lG~GP4#r`r0G~4m~4lG~s#Gv6pG~psGv626v~p4r#p}~5l6vl~r#Gy<vm<T6p66<GM~r4~4lG~sm6<4~4m~vm<26<G~4lG~v#mpp pr#G~pGr#vlGp~r<M~p4r#4~pEVcGv4y<4m~4lG~pGv4m#~rp~r~26<64G~4G`sG#r4E#G~r<M~r~vm##Gpsm<M6<0~p4r4G~m2~4lGy<GKGv4#m<p}~6<vKEM6<0~4lG~p4r4G~r<M~4lG~p60l4~m2~r~pG#6Gp~m2~sr4vl6<0~6py<sG#2m#`GM~Vo~rKK~4lG~`EK46sKG~p6`EKr46m<~m2~4lG~p4r#~2m#`r46m<~m2~4lG6#~p6XGpxy<.G~s#GpG<4~r~vlr#rv4G#6Xr46m<~m2~`rppG#~m2~r<~GP4G#<rK~p4r#pxy<k}~k(m``G<4&~Sw~sr0Gp98<~4l6p~srsG#}~5G~vm<p6MG#~r~<m<vm`sE4r46m<rK~GPsG#6`G<4rKKo~MGp60<GMy<p4r4G m2 4lG r#4~`G4lmM~6<MEvGM~Vo~4#r<p2m#`r46m<~4m~4Gp4~4lG~p4r#p~m2y<smKr#6XGM~ps6<px~-lGpG~#GvG#p6m<~`r6<4G<r6<p~m2~4lG~`mMG#rK~pop4G`~6p~ry<`GrpE#GM~p4r4Gp~r<M~4lG~vKrpp6vrK~vlr#rv4G#6p46v~m2~4lG~p4#Ev4E#G~m22G#p~r~sG#6mM6vy<s#m0#r`~m2~4lG~vm`smp646m<rKKo vm<<Gv4GM~vlr#0G}~5lG#G~m<~4lG~vm<p4#r6<4p~2#m`y<4lG~p6`EKr46m<~#GpGr#vl~r<M~4lG~sG#6mM~m2~4lG~vm<vG<4#r46m<~p4r#px~8<~4l6p~5m#t~5Gy<p4EMo~4lG~#G06m< m2~4lG~rss#mrvl~2m#~4lG~p4rvt~m2~r<4626<Mr#Gp~r<M~4lG~pE#2rvy<r<M~4lG~4#E<vr46m<~m#~6<M6vr46<0~4lG~vm``m<~s#6m#~p4#G<04l~m#~6<4#6vp6<0y<psr#px~.G~s#msmpG~r~p6`sKG~psGv4#mpvms6v~`GrpE#G~rp~r~sm4G<46rK~4Gvl<6vrKy<rppE`s46m<~m2~4lG~slrpG~4#r<p646m<~4lr4~vr<~VG~vm<4r6<GM~6<~s#GT6mEp~5m#tp&~4lGoy<6<M6vr4G~4lr4~4lG~GKG`G<4r#o~v#mpp~pGv46m<~6p~r~p6<0KG~srsG#~r<M~4lG~#Ep4~p4r#Gy<r#G~6<TGp460r4GM~564l~pm`G~vlrKKG<06<0~4lGm#o}~5l6vl~6p~r~pG`6vm<M6<6m<~4lr4y<6p~4m~MGpv#6VG~4lG~smpG~r<M~6<2#r#GM~6`sK6vr46m<p~r4~Km5~4#r<p646m<~2#G,EG<voxy<-lG~`m46m<~m2~4lG~`6P6<0~r<rKop6p~m<~4lG~ps6<~p4r4Gp~vm<46<EG~6<~p4r<Mr#My<M6p4m#46m<p~m2~4lG~`r0<G46v~26GKM}~r<M~6<TGp460r4G~64p~pEss#Gpp6m<~4m~p4#6<0y<4G`sG#r4E#Gpx~.G~s#mTG~4lr4~64~vKmpGKo~p60<626vr<4Ko~6<TGp460r4GM~4lG~s#mVrV6K64oy<m2~r<~GPsK6v64~2#r`G5m#t~m2~4lG~
+(LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>),)
+Tensor("one_hot:0", shape=(1, 1, 96), dtype=float32)
+<tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x000001C5B2315CC0>
+X shape: Tensor("Reshape:0", shape=(1, 512), dtype=float32) and W shape: <tf.Variable 'softmax/Variable:0' shape=(512, 96) dtype=float32_ref>
+2018-08-02 10:57:40.583243: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-02 10:57:40.583568: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-02 10:57:40.583885: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-02 10:57:40.584082: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-02 10:57:40.584314: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+INFO:tensorflow:Restoring parameters from checkpoints/i200_l512.ckpt
+The==j?j
+?$$jj%j%%~%}yy<4lGy~%?jyy?
+y%%%
+j
+%%%%%yy%yyy<%%%j%%~%y%%yyy%%%y
+?
+?%%j%?yyy?%
+????
+%%yj
+%%%?yj
+%yyy<%y%%y?y%%?%%j%~%%yyy%%%%j%%%yy<%?%y%y%%y%y
+y%jy%
+y
+y%yjy%%%y%j%y%yy<y<%y%%%j%?%yj%yj%yyy<%%?jj%~jj%~%y<%yy%%yyy%%yj%%?y
+j%%%~j%yy<%y?%yyj%y%%%yj%%y%
+?%j
+%y%yy%y%%y%y??%%yj%y%%y
+%%%y?%y%
+%jyy<r%~r%yy<?%%yy%?jj%yy<j%%j%%yy%yyy?%?%%yj
+?yyj%y
+%%y%
+y?%yyj%%??y?j???%jyjyyyy%
+yj%j%%?
+j
+%yyy%?%%%yy%%?j%%%%yyyy%yyy%%
+???jjjjy%~?yj%yyy<r??j%jy%yyyy<%??
+%y=jyj%yy%%yy<
+j?y?j%?jj%~yy<Gy<%y?y%
+%%yy<??j%jy%~%?y?
+j
+j?j%yy<?j%y?yyy%?j%%
+?%yy%y%%y%%y
+?
+j%%%%~%%%yyy<%?%%jj
+%%yy<%~?yjy%y%yy<yy<j%yj%?yyj%yyy?jj%%%y%j?%yy%%yyj%y%%%%%yy%y?j??yj%y?yyy%?j%%j?j%%yyy%j%%%%yy%%?yyyy%%%%y%?yyj%y%%j%yyyj
+%%
+%
+?j%%yy%?y%%yj%yy<y<%y%%%y%?j%yyyy%y%%y%j
+?yj%?y??%yyj%y
+%?yj%%y%y
+%yj%
+%%?j%j%%yyy<r4??%yy%j%j%y%%j?
+?jj%~%~r4l~r#~r<p~6<~p6<p~m2~4lG~pGp~4l~46<0G~p~r<M~4m#Gp~46<p~m`Gp4m#~4lG~4lG~pm#~pG~4mM6v4r<4lm<~r4~m2~#rp6<0~4lGy<4lG~r4~m<~m<~4lm#6p4m~~2m<G~4G~4l6<0~4l~r<46`~46m<~r#~slG#G~vm#p6p4G~pm~p~r<~46m#~pEp~6m
+(LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>),)
+Tensor("one_hot:0", shape=(1, 1, 96), dtype=float32)
+<tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x000001C5B2170908>
+X shape: Tensor("Reshape:0", shape=(1, 512), dtype=float32) and W shape: <tf.Variable 'softmax/Variable:0' shape=(512, 96) dtype=float32_ref>
+INFO:tensorflow:Restoring parameters from checkpoints/i1000_l512.ckpt
+2018-08-02 10:57:43.022571: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-02 10:57:43.022857: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-02 10:57:43.023142: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-02 10:57:43.023380: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-02 10:57:43.023619: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+We[u*[*a~%OS%}y<4lr4~4lG~s#GsG#46m<~m2~4lG~pG`sG#p6m<~m2~4lGy<vm`sKGP4~vmK#r4G~p4rMG~r<M~vm<4G#<~r<M~4m#r4GMy<vm<p4#Er4G~m2~4lG~G#26<6G<~r<M~4lm~p4mM6v4p}~G<460KGp~m2~4lG~vm`sE#646vrK~pG#TG<4p~r#m~MG#Gv46<0~4lGy<G<0#mssG#rKm<M~Vo~4lG~GP46<64r~4m~4lG~vm`sG4G<v6p6m0~m2~r~vr<Gp4~vm``E<6<0~4lG~`r<p6m<~r<M~vE#TG~4lG~pEv46m<rK~pG`EK46<0y<r<M~vm`sE464E46m<~2m#~pE`VKGp~r#G~4m~p4#Gv4E#G~r#~m#G~4lG~pEv4m#p~m2~rKKopp~r~pE`VG<4r46m<~m2~4lG~vr`sm#m<px~-lG~s#mTGM~r<0~r<M~rK0m<r46m<~6<y<4m~4lG~s#mV6<6<0x~8<~6<46<06m<}~5G~p6TG~4lG~vm`sm<G<vG~2#G`p~5l6KG~4#~G<MGv4~r<M~pG#26v6G<vG~m2y<r~s#Gs#msGp4m#6vrKy<s#mvm<p6m<~r<M~4lr<~4lG~GPsK6<GM~6<~4lG~srpG~6<~r<0G#rK6p6pp~r<M~p4EMo~4lG~psG44#6m<rK~sr#4Gv4~m2~4lG~p4r<46vrKKop~4m~pG<vG~4lG~p46`6<0y<rKKG<46<0~62~vlr#4GM~vm#sGp~4m~4lG4G~v#mpp~r#~GPs#m`GM646m<~6<~4lG~4lG~pE`sr46<0~GPG`sGp~6<~mssG#r#6Gp~pG4G#p6m<p~r<M~64#Gv46<0~r~MG#GvrK~6<~Gp4r46m<pxy<-lGpG#p4G#~4lrp~4lrp~p4#Ev4E#Gp~pE`G#rKG~6p4rKp~r<M~r#06G<4~5l~4lG~s#mVGG<y<rKpmp4r#64r46m<p~r#G~4l64G~r4m#r46m<rK~r<4~
+(LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>),)
+Tensor("one_hot:0", shape=(1, 1, 96), dtype=float32)
+<tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x000001C5CE88AAC8>
+X shape: Tensor("Reshape:0", shape=(1, 512), dtype=float32) and W shape: <tf.Variable 'softmax/Variable:0' shape=(512, 96) dtype=float32_ref>
+2018-08-02 10:57:45.458826: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-02 10:57:45.459108: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-02 10:57:45.459389: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-02 10:57:45.459633: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-02 10:57:45.459867: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+INFO:tensorflow:Restoring parameters from checkpoints/i2000_l512.ckpt
+We*-^g^^^98<4#6v6XGM~r<~r~s#GsG#46m<~m2~4#GG~r#G~p4r4G~r<M~4lG~pE``r<o~`GrpE#G`G<4py<4lr4~G226v6G<4p~2mK~r<r6<rK~4lrp~4lG~ps64~rppEv46m<~6p~r#G~6<TG#4GM~6<~rsy<vr<~VG~M622G#G<4~2m#`rK~pmE#vG~r<M~4lG~sKGvr46m<~4G`sG#GpE#G~r<M~4l6p~pG46vrKy<pEv4~m<446v~Gp4G`p~r<M~rKKG5~r~pG4~m2~4lG~sG#2m#`r<vG~m2~p4#m<0~vm#sr#r<m<x~.l6<Gy<vm<4G#4E#G~4lGm#G`6<rKo}~pG<26vr46m<~2m#~vm<p4#Ev46m<p~6<~4lG~p6`EKr4GM~2#m`y<r<M~4lG~#r46v~2m#`~4lG~vm##GKr46m<~m2~vr#Gp~4lG~p6`sKG~6<2EpG~m#~4G`sG#r4E#Gy<vrKrv46m<x~Y6<6K64o}~5G~r#G~r<M~6<4G0#rK~p60<rK6m#py<6<4#mMEvGM~VG45GG<~4lG~pG`m<p4#6r<~rpG#~4lr4~64~6p~pmE<vG~4m~4lG~s#msG#46Gpy<r<M~6<~mE#~`6<GM~vm`sr#r46m<p~r4~msG#~r~M6pvmpG#~m2~r<M~vrp~6p~smpp6VKGy<4m~4#G<p646<0~4#r6<p~m2~4lG~M62KG#p~4lr4~6p~rp~`6<6`6XGM~Vo~r#G~m<G#~r<MGK~4lGy<G,Er#6m`~4m~4lG~p6`6Kr#~564l~4lG~pG`6m< KroG#~Mm`6<r46m<~m2~4lG~vK6p46vrKy<vE#4G<4~rKmvrKo~4#rvGK~4m#G~6`~06mEp~r<M~6<4G#rv46m<p~r<M~4m`GM~4m~r~vr#vGy<vlr4rv4G#6XGM~r#~plm5~4lr4~pEVpvr46<0~#r46m<rK6<0~r<M~4m~r~vm<p4#E6<4~m2~46`G~vrKy<VrpGM~m<

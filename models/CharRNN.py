@@ -4,7 +4,7 @@ import tensorflow as tf
 
 
 # Load data
-with open('blah.text', 'r') as f:
+with open('../data/20177.txt', 'r') as f:
     text = f.read()
 # build char vacab
 vocab = set(text)
@@ -15,7 +15,7 @@ int_to_vocab = dict(enumerate(vocab))
 
 # encoding
 encoded = np.array([vocab_to_int[c] for c in text], dtype=np.int32)
-
+print("encoded shaped: {}".format(encoded.shape))
 
 def get_batches(arr, n_seqs, n_steps):
     """
@@ -29,16 +29,16 @@ def get_batches(arr, n_seqs, n_steps):
     n_batches = int(len(arr) / batch_size)
 
     # we only keep the finished batches and ditch the rest
-    arr = arr[: batch_size * n_batches]
+    arr = arr[:batch_size * n_batches]
 
     arr = arr.reshape((n_seqs, -1))
 
     for n in range(0, arr.shape[1], n_steps):
-        x = arr[: n: n+ n_steps]
-        print(x.shape())
+        x = arr[:, n:n + n_steps]
         y = np.zeros_like(x)
-        y[:, :-1], y[:, -1] = x[:, 1:], y[:, 0]
+        y[:, :-1], y[:, -1] = x[:, 1:], x[:, 0]
         yield  x, y
+
 
 def build_inputs(num_seqs, num_steps):
     '''
@@ -65,14 +65,18 @@ def build_lstm(lstm_size, num_layers, batch_size, keep_prob):
     :return:
     '''
 
-    # build lstm unit
-    lstm = tf.contrib.rnn.BasicLSTMCell(lstm_size)
+    lstm_cells = []
+    for i in range(num_layers):
+    # Create new LSTM cell
+        lstm = tf.nn.rnn_cell.BasicLSTMCell(lstm_size)
+        # lstm = tf.contrib.rnn.BasicLSTMCell(lstm_size)
 
-    # add dropout
-    drop = tf.contrib.rnn.DropoutWrapper(lstm, output_keep_prob=keep_prob)
+        # add dropout
+        drop = tf.nn.rnn_cell.DropoutWrapper(lstm, output_keep_prob=keep_prob)
+        lstm_cells.append(drop)
+    # stack lstm cells
+    cell = tf.nn.rnn_cell.MultiRNNCell(lstm_cells)
 
-    # stack more lstm units
-    cell = tf.contrib.rnn.MultiRNNCell([drop for _ in range(num_layers)])
     initial_state = cell.zero_state(batch_size, tf.float32)
 
     return cell, initial_state
@@ -97,6 +101,7 @@ def build_output(lstm_output, in_size, out_size):
         softmax_w = tf.Variable(tf.truncated_normal([in_size, out_size], stddev=0.1))
         softmax_b = tf.Variable(tf.zeros(out_size))
 
+    print("X shape: {} and W shape: {}".format(x, softmax_w))
     logits = tf.matmul(x, softmax_w) + softmax_b
 
     out = tf.nn.softmax(logits, name='predictions')
@@ -118,7 +123,7 @@ def build_loss(logits, targets, lstm_size, num_classes):
     y_reshaped = tf.reshape(y_one_hot, logits.get_shape())
 
     # cross entropy
-    loss = tf.nn.softmax_cross_entropy_with_logits(logits, labels=y_reshaped)
+    loss = tf.nn.softmax_cross_entropy_with_logits(logits=logits, labels=y_reshaped)
     loss = tf.reduce_mean(loss)
 
     return loss
@@ -137,6 +142,8 @@ def build_optimizer(loss, learning_rate, grad_clip):
     train_op = tf.train.AdamOptimizer(learning_rate)
     optimizer = train_op.apply_gradients(zip(grads, tvars))
 
+    return optimizer
+
 class CharRNN:
 
     def __init__(self, num_classes, batch_size=64, num_steps=50, lstm_size=128, num_layers=2,
@@ -153,6 +160,9 @@ class CharRNN:
 
         x_one_hot = tf.one_hot(self.inputs, num_classes)
 
+        print(self.initial_state)
+        print(x_one_hot)
+        print(cell)
         outputs, state = tf.nn.dynamic_rnn(cell, x_one_hot, initial_state=self.initial_state)
         self.final_state = state
 
