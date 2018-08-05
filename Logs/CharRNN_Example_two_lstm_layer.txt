@@ -1,0 +1,179 @@
+C:\Users\yichu\Anaconda3\envs\tensorflow\python.exe "C:\Program Files\JetBrains\PyCharm 2018.1.4\helpers\pydev\pydevconsole.py" 51107 51108
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['C:\\Users\\yichu\\Documents\\Projects\\Deep Learning\\dlproject', 'C:/Users/yichu/Documents/Projects/Deep Learning/dlproject'])
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.3.1 -- An enhanced Interactive Python. Type '?' for help.
+PyDev console: using IPython 6.3.1
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)] on win32
+runfile('C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models/test.py', wdir='C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models')
+x
+ [[ 6 65 26 54 27  2 47 14 12 58]
+ [14 26 81 14 75 20 27 14 21 20]
+ [63 32 75 18 58 58 55 15  2 64]
+ [75 14 74 36 47 32 75 21 14 65]
+ [14 32 27 14 32 64 48 14 64 32]
+ [14 41 27 14 17 26 64 58 20 75]
+ [65  2 75 14 52 20 81  2 14 38]
+ [ 5 14  1 36 27 14 75 20 17 14]
+ [27 14 32 64 75 23 27 18 14  9]
+ [14 64 26 32 74 14 27 20 14 65]]
+y
+ [[65 26 54 27  2 47 14 12 58 58]
+ [26 81 14 75 20 27 14 21 20 32]
+ [32 75 18 58 58 55 15  2 64 48]
+ [14 74 36 47 32 75 21 14 65 32]
+ [32 27 14 32 64 48 14 64 32 47]
+ [41 27 14 17 26 64 58 20 75 53]
+ [ 2 75 14 52 20 81  2 14 38 20]
+ [14  1 36 27 14 75 20 17 14 64]
+ [14 32 64 75 23 27 18 14  9 65]
+ [64 26 32 74 14 27 20 14 65  2]]
+WARNING:tensorflow:From C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models/test.py:207: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+See @{tf.nn.softmax_cross_entropy_with_logits_v2}.
+2018-08-03 14:33:47.933402: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2018-08-03 14:33:48.147421: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1392] Found device 0 with properties: 
+name: Quadro M2200 major: 5 minor: 2 memoryClockRate(GHz): 1.036
+pciBusID: 0000:01:00.0
+totalMemory: 4.00GiB freeMemory: 3.33GiB
+2018-08-03 14:33:48.148015: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-03 14:33:48.573040: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-03 14:33:48.573546: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-03 14:33:48.573777: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-03 14:33:48.574133: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+轮数: 1/20...  训练步数: 100...  训练误差: 3.0378...  0.4523 sec/batch
+轮数: 2/20...  训练步数: 200...  训练误差: 2.4332...  0.4279 sec/batch
+轮数: 2/20...  训练步数: 300...  训练误差: 2.2310...  0.4516 sec/batch
+轮数: 3/20...  训练步数: 400...  训练误差: 2.0598...  0.4279 sec/batch
+轮数: 3/20...  训练步数: 500...  训练误差: 1.9262...  0.4308 sec/batch
+轮数: 4/20...  训练步数: 600...  训练误差: 1.8154...  0.4258 sec/batch
+轮数: 4/20...  训练步数: 700...  训练误差: 1.7735...  0.4321 sec/batch
+轮数: 5/20...  训练步数: 800...  训练误差: 1.6986...  0.4348 sec/batch
+轮数: 5/20...  训练步数: 900...  训练误差: 1.6639...  0.4258 sec/batch
+轮数: 6/20...  训练步数: 1000...  训练误差: 1.6178...  0.4289 sec/batch
+轮数: 6/20...  训练步数: 1100...  训练误差: 1.5990...  0.4328 sec/batch
+轮数: 7/20...  训练步数: 1200...  训练误差: 1.5450...  0.4299 sec/batch
+轮数: 7/20...  训练步数: 1300...  训练误差: 1.5068...  0.4279 sec/batch
+轮数: 8/20...  训练步数: 1400...  训练误差: 1.5086...  0.4308 sec/batch
+轮数: 8/20...  训练步数: 1500...  训练误差: 1.4368...  0.4274 sec/batch
+轮数: 9/20...  训练步数: 1600...  训练误差: 1.4131...  0.4338 sec/batch
+轮数: 9/20...  训练步数: 1700...  训练误差: 1.3733...  0.4249 sec/batch
+轮数: 10/20...  训练步数: 1800...  训练误差: 1.4233...  0.4309 sec/batch
+轮数: 10/20...  训练步数: 1900...  训练误差: 1.3727...  0.4312 sec/batch
+轮数: 11/20...  训练步数: 2000...  训练误差: 1.3989...  0.4318 sec/batch
+轮数: 11/20...  训练步数: 2100...  训练误差: 1.3399...  0.4289 sec/batch
+轮数: 12/20...  训练步数: 2200...  训练误差: 1.3612...  0.4277 sec/batch
+轮数: 12/20...  训练步数: 2300...  训练误差: 1.2848...  0.4548 sec/batch
+轮数: 13/20...  训练步数: 2400...  训练误差: 1.3324...  0.4488 sec/batch
+轮数: 13/20...  训练步数: 2500...  训练误差: 1.3076...  0.4295 sec/batch
+轮数: 14/20...  训练步数: 2600...  训练误差: 1.2528...  0.4308 sec/batch
+轮数: 14/20...  训练步数: 2700...  训练误差: 1.2433...  0.4284 sec/batch
+轮数: 15/20...  训练步数: 2800...  训练误差: 1.3006...  0.4287 sec/batch
+轮数: 15/20...  训练步数: 2900...  训练误差: 1.2799...  0.4329 sec/batch
+轮数: 16/20...  训练步数: 3000...  训练误差: 1.2930...  0.4312 sec/batch
+轮数: 16/20...  训练步数: 3100...  训练误差: 1.2133...  0.4265 sec/batch
+轮数: 17/20...  训练步数: 3200...  训练误差: 1.2351...  0.4258 sec/batch
+轮数: 17/20...  训练步数: 3300...  训练误差: 1.2300...  0.4279 sec/batch
+轮数: 18/20...  训练步数: 3400...  训练误差: 1.2511...  0.4249 sec/batch
+轮数: 18/20...  训练步数: 3500...  训练误差: 1.2474...  0.4353 sec/batch
+轮数: 19/20...  训练步数: 3600...  训练误差: 1.2282...  0.4277 sec/batch
+轮数: 19/20...  训练步数: 3700...  训练误差: 1.2205...  0.4269 sec/batch
+轮数: 20/20...  训练步数: 3800...  训练误差: 1.1749...  0.4264 sec/batch
+轮数: 20/20...  训练步数: 3900...  训练误差: 1.2367...  0.4308 sec/batch
+INFO:tensorflow:Restoring parameters from checkpoints\i3960_l512.ckpt
+2018-08-03 15:02:20.218300: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-03 15:02:20.218666: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-03 15:02:20.219022: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-03 15:02:20.219259: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-03 15:02:20.219561: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+There are a bathing trousers.
+"What a side of that?"
+"Why, that'll so merely anyway. We had not to do the sale a sort for her.
+All of this sense and mere hand. I have seen that their strange and
+still as a matter for her," he said; satidially, she would have a sense
+of that. She drove the corthard to the book the soft strength to
+him, he went away from the cattle he should be done.
+Stepan Arkadyevitch had been someone with her hands. He went over their
+presiness with the details of the trouble and hortors, the same
+sincers with the doctor's work that that he had still had to go. So
+it had not sank to the parents, and then the chair is worrounging the chest
+of the porter's horse from this matter. She had no still more of tender.
+There was a shoulders of her former starts, he was saying what he was
+a man who had been torrurtive that this condition of the conversations of
+these words. To the same thing she came out of a course that he was
+considered with herself. She was immediately as he was the same still
+troubles of their hostess, and so stond as so many whose shoulders of
+the station and woming she would have been to do still the mere has of
+his wife when the painter is wearing in the most as he could not, as
+that intending the most so stony and with anything she was not time. They are
+at happiness as though about her, and trying to spart the side from the
+conversation.
+"What are you time to be an argund for a last?"
+"Never see and that it's at all to my delay on all, was a sense of tall
+again. The doctors, insisting or silence, that he has say as they
+won't be so more in these too to me that there can't tell you, and that
+it is a sort of thing, and I should have to do nothing with your.
+I would have thought that you're not the carriage."
+"Why are you a conversation is to be done?"
+She wanted that a striggle had said, and this should be stood as her simple
+trouble, he had not been started why he said, though he were struck
+into and terrible as to the position. 
+2018-08-03 15:02:26.671582: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-03 15:02:26.671949: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-03 15:02:26.672303: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-03 15:02:26.672537: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-03 15:02:26.672836: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+INFO:tensorflow:Restoring parameters from checkpoints/i200_l512.ckpt
+Fart hirt hom hond wha th or him ant hars tor he als ther thas siseser the he har sote al shas whath hat he sot th torh ons to angethe soron an sathe ale so harin onth that the ha his her and tarer sothend ans oun thar thom sese war sisot ho he wing ho hassed or out out the sher hand. "en whas soun she har asdo that hes out he anle se there sonters as anse whor an hed
+son se the shant of ouns on whot he has ond hit ho he ho sere wor he at hos
+ante an ortor hos he son tet oritons hes hha hor tot that hos he she tho cot he he sor ale are tothe sost hing ther alt as and the the hit thers ontere and ho torang and home her ansante tat ans ar aned and ton and antho se tan so thassile sorte sith on hot has this and and ous hirsesinte he se he tor oud the has tere hhe shis the therensin shan het hher sot hat the hhe sile sher hite she tath ser heres ang hhed has ale sot anse she sar as at on ther, thes the wha dasinge hit thim he ardarinses ont he woto hin se he sares of whe set than wes he se ans
+INFO:tensorflow:Restoring parameters from checkpoints/i1000_l512.ckpt
+2018-08-03 15:02:30.527618: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-03 15:02:30.527964: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-03 15:02:30.528308: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-03 15:02:30.528550: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-03 15:02:30.528843: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+Farnding this hound, and there were time. And his sone. She has
+see in the poining thone of the posing of that he saw that the carre was he was to she had seet
+to his hand was so his facily who was all she had all that words he with her.
+"What the stare with you me was and same to mill, and I am
+that I saw you was so see you all all made
+in the provice," as it had say
+to him. That tho the witily on the sentse of the chorse.
+"Yes, what you was into here that is well,"
+he see her the came to the shease had as should her husband with a
+ploanger of his shall--and with she was
+diving aboot of the parsiand worker of all hand off her tire, a door was the somily were
+she was tains of to the came in som that he should be all the possion of she had not and though the so man so was the pecsart
+the wingenss who
+served a convrain to he was any section, and a loush, was to the soll,
+and said a mentaness, his hands. She was all take that in the with a more she would so did not
+have he had been the poor
+2018-08-03 15:02:34.399591: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-03 15:02:34.399953: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-03 15:02:34.400297: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-03 15:02:34.400530: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-03 15:02:34.401108: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+INFO:tensorflow:Restoring parameters from checkpoints/i2000_l512.ckpt
+Farring to the
+same tore, and this insparen, setting into words of a stirl, to see his
+higher and she heard, and thought. Sid not the stritt serene sense of
+his still and his his askence of a man.
+"What sid I do that you're began," he said, stopped.
+She came up and.
+"You could not consert it.
+"I'm going ordy."
+"Oh, the soll, that's it to their prince, it's through a little sinch
+to the moments would have ark of that its and so much other in
+its from the same. And that I've sat to himself."
+"I could not help thanks," he talked to him about his with the same to
+the still of his first remembered the same fashion and had been satisfacted,
+and trought, to all the possice that was not three who could not see it,
+too, and a servais, though he was the compontent of a little carriage
+with at the strends on sold with a subject at them only a crich, who was
+too some till he was in this signest in her face, and he had so not so
+marriage.
+"Well, that's nothing to so," she said, and a smore, and 

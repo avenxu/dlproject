@@ -4,7 +4,7 @@ import tensorflow as tf
 
 
 # Load data
-with open('../data/20177.txt', 'r') as f:
+with open('../data/anna.txt', 'r') as f:
     text = f.read()
 # build char vacab
 vocab = set(text)
@@ -15,7 +15,12 @@ int_to_vocab = dict(enumerate(vocab))
 
 # encoding
 encoded = np.array([vocab_to_int[c] for c in text], dtype=np.int32)
-print("encoded shaped: {}".format(encoded.shape))
+
+text[:100]
+
+encoded[:100]
+
+len(vocab)
 
 def get_batches(arr, n_seqs, n_steps):
     """
@@ -25,19 +30,21 @@ def get_batches(arr, n_seqs, n_steps):
     :param n_steps: length of a sequence
     :return:
     """
+
     batch_size = n_seqs * n_steps
     n_batches = int(len(arr) / batch_size)
-
     # we only keep the finished batches and ditch the rest
     arr = arr[:batch_size * n_batches]
 
     arr = arr.reshape((n_seqs, -1))
 
     for n in range(0, arr.shape[1], n_steps):
+        # inputs
         x = arr[:, n:n + n_steps]
+        # targets
         y = np.zeros_like(x)
         y[:, :-1], y[:, -1] = x[:, 1:], x[:, 0]
-        yield  x, y
+        yield x, y
 
 
 def build_inputs(num_seqs, num_steps):
@@ -68,14 +75,14 @@ def build_lstm(lstm_size, num_layers, batch_size, keep_prob):
     lstm_cells = []
     for i in range(num_layers):
     # Create new LSTM cell
-        lstm = tf.nn.rnn_cell.BasicLSTMCell(lstm_size)
+        lstm = tf.contrib.rnn.BasicLSTMCell(lstm_size)
         # lstm = tf.contrib.rnn.BasicLSTMCell(lstm_size)
 
         # add dropout
-        drop = tf.nn.rnn_cell.DropoutWrapper(lstm, output_keep_prob=keep_prob)
+        drop = tf.contrib.rnn.DropoutWrapper(lstm, output_keep_prob=keep_prob)
         lstm_cells.append(drop)
     # stack lstm cells
-    cell = tf.nn.rnn_cell.MultiRNNCell(lstm_cells)
+    cell = tf.contrib.rnn.MultiRNNCell(lstm_cells)
 
     initial_state = cell.zero_state(batch_size, tf.float32)
 
@@ -137,7 +144,7 @@ def build_optimizer(loss, learning_rate, grad_clip):
     :return:
     '''
     # gradient clipping
-    tvars = tf.trainable_variables();
+    tvars = tf.trainable_variables()
     grads, _ = tf.clip_by_global_norm(tf.gradients(loss, tvars), grad_clip)
     train_op = tf.train.AdamOptimizer(learning_rate)
     optimizer = train_op.apply_gradients(zip(grads, tvars))
@@ -146,8 +153,9 @@ def build_optimizer(loss, learning_rate, grad_clip):
 
 class CharRNN:
 
-    def __init__(self, num_classes, batch_size=64, num_steps=50, lstm_size=128, num_layers=2,
-                 learning_rate = 0.001, grad_clip=5, sampling =False):
+    def __init__(self, num_classes, batch_size=64, num_steps=50,
+                 lstm_size=128, num_layers=2, learning_rate=0.001,
+                 grad_clip=5, sampling=False):
         if sampling == True:
             batch_size, num_steps = 1, 1
         else:

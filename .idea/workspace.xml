@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84daf531-fcb8-452b-8c6d-967004aaa460" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/models/misc_code.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/CharRNN_Sampling.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/models/CharRNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/CharRNN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/model_1_testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_1_testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/model_1_training.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_1_training.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,55 +16,61 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/dlproject$model.coverage" NAME="model Coverage Results" MODIFIED="1533144431155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Models" />
+    <SUITE FILE_PATH="coverage/dlproject$test.coverage" NAME="test Coverage Results" MODIFIED="1533148700392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/dlproject$model.coverage" NAME="model Coverage Results" MODIFIED="1533148711185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
     <SUITE FILE_PATH="coverage/dlproject$learning.coverage" NAME="learning Coverage Results" MODIFIED="1532738231214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Models" />
+    <SUITE FILE_PATH="coverage/dlproject$model_1_testing.coverage" NAME="model_1_testing Coverage Results" MODIFIED="1533312412649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="60509630">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.5" value="5" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="17" />
-          <entry key="dummy" value="23" />
-          <entry key="py" value="4304" />
+          <entry key="Python Console" value="79" />
+          <entry key="dummy" value="47" />
+          <entry key="py" value="5050" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="IPNB" value="3" />
-          <entry key="Python" value="12" />
+          <entry key="IPNB" value="7" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="ipynb" value="3" />
-          <entry key="py" value="12" />
+          <entry key="ipynb" value="7" />
+          <entry key="py" value="26" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="23" />
-          <entry key="Python" value="4321" />
+          <entry key="PLAIN_TEXT" value="47" />
+          <entry key="Python" value="5129" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/models/model.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/model_1_training.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+            <state relative-caret-position="809">
+              <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -70,10 +79,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/misc_code.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="0" />
+        <entry file="file://$PROJECT_DIR$/models/model_1_testing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,19 +93,28 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/CharRNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1101">
-              <caret line="155" column="42" selection-start-line="155" selection-start-column="31" selection-end-line="155" selection-end-column="42" />
+            <state relative-caret-position="-1800">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <marker date="1533144431134" expanded="true" signature="410:415" ph="..." />
-                <marker date="1533144431134" expanded="true" signature="1045:1050" ph="..." />
-                <marker date="1533144431134" expanded="true" signature="1464:1469" ph="..." />
-                <marker date="1533144431134" expanded="true" signature="1998:2003" ph="..." />
-                <marker date="1533144431134" expanded="true" signature="2620:2625" ph="..." />
-                <marker date="1533144431134" expanded="true" signature="3071:3076" ph="..." />
-                <marker date="1533144431134" expanded="true" signature="3433:3434" ph="..." />
-                <marker date="1533144431134" expanded="true" signature="3433:3439" ph="..." />
+                <marker date="1533491185048" expanded="true" signature="448:453" ph="..." />
+                <marker date="1533491185048" expanded="true" signature="1093:1098" ph="..." />
+                <marker date="1533491185048" expanded="true" signature="1512:1517" ph="..." />
+                <marker date="1533491185048" expanded="true" signature="2176:2181" ph="..." />
+                <marker date="1533491185048" expanded="true" signature="2860:2865" ph="..." />
+                <marker date="1533491185048" expanded="true" signature="3318:3323" ph="..." />
+                <marker date="1533491185048" expanded="true" signature="3701:3702" ph="..." />
+                <marker date="1533491185048" expanded="true" signature="3701:3707" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-522">
+              <caret line="396" column="29" selection-start-line="396" selection-start-column="29" selection-end-line="396" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -112,7 +133,20 @@
       <find>seek</find>
       <find>lstm</find>
       <find>learning</find>
+      <find>Epoch</find>
+      <find>build_optimizer</find>
+      <find>print</find>
+      <find>prediction</find>
+      <find>tf.nn</find>
+      <find>tf.concat(1, lstm_output)</find>
+      <find>tf.nn.rnn_cell</find>
+      <find>BasicLSTMCell</find>
+      <find>lstm_size</find>
     </findStrings>
+    <replaceStrings>
+      <replace>tf.concat(lstm_output, axis=1)</replace>
+      <replace>tf.contrib.rnn</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -128,7 +162,11 @@
         <option value="$PROJECT_DIR$/models/learning.py" />
         <option value="$PROJECT_DIR$/models/lstm.py" />
         <option value="$PROJECT_DIR$/models/model.py" />
+        <option value="$PROJECT_DIR$/models/model-1.py" />
+        <option value="$PROJECT_DIR$/models/model_1_training.py" />
         <option value="$PROJECT_DIR$/models/CharRNN.py" />
+        <option value="$PROJECT_DIR$/models/model_1_testing.py" />
+        <option value="$PROJECT_DIR$/models/test.py" />
       </list>
     </option>
   </component>
@@ -139,10 +177,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-1088" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -151,36 +188,18 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="dlproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dlproject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dlproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dlproject" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dlproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dlproject" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\yichu\Documents\Projects\Deep Learning\dlproject\models" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -194,7 +213,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.model">
+  <component name="RunManager" selected="Python.test">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="dlproject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -217,7 +236,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="learning" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="model-1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="dlproject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -225,12 +244,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Models" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Models/learning.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\yichu\Documents\Projects\Deep Learning\dlproject\models\model_1_training.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -239,20 +258,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="model_1_testing" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="dlproject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Models" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Models/model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/model_1_testing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -261,7 +277,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="zipfile" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="model_1_training" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="dlproject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -269,12 +285,31 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Anaconda3/envs/tensorflow/Lib" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Anaconda3/envs/tensorflow/Lib/zipfile.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/model_1_training.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="dlproject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -284,15 +319,17 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.model" />
-      <item itemvalue="Python.learning" />
-      <item itemvalue="Python.zipfile" />
+      <item itemvalue="Python.model-1" />
+      <item itemvalue="Python.model_1_testing" />
+      <item itemvalue="Python.model_1_training" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.model" />
-        <item itemvalue="Python.learning" />
-        <item itemvalue="Python.zipfile" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.model_1_testing" />
+        <item itemvalue="Python.model_1_training" />
+        <item itemvalue="Python.model-1" />
       </list>
     </recent_temporary>
   </component>
@@ -310,16 +347,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-1088" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18123667" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.38402626" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3297414" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39914164" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35729614" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -327,14 +363,14 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32939914" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010661" side_tool="true" weight="0.32939914" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.4989339" visible="true" weight="0.4753219" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32939914" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.4989339" visible="true" weight="0.33476394" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="4" />
-      <window_info anchor="right" x="0" y="0" width="434" height="866" id="Documentation" order="5" side_tool="true" visible="true" weight="0.2739872" />
+      <window_info anchor="right" x="0" y="0" width="434" height="866" id="Documentation" order="5" side_tool="true" visible="true" weight="0.36247334" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,9 +383,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/models/CharRNN.py</url>
-          <line>155</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/models/model_1_testing.py</url>
+          <line>78</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -362,13 +398,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/Sample-Model.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/miscCode/ExtractAbstractAsTxt.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -443,35 +472,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/lstm.py" />
-    <entry file="file://$USER_HOME$/Anaconda3/envs/tensorflow/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="315" column="24" lean-forward="true" selection-start-line="315" selection-start-column="24" selection-end-line="315" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Anaconda3/envs/tensorflow/Lib/site-packages/tensorflow/python/framework/ops.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="478">
           <caret line="1591" selection-start-line="1591" selection-end-line="1591" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/CharRNN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1101">
-          <caret line="155" column="42" selection-start-line="155" selection-start-column="31" selection-end-line="155" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <marker date="1533144431134" expanded="true" signature="410:415" ph="..." />
-            <marker date="1533144431134" expanded="true" signature="1045:1050" ph="..." />
-            <marker date="1533144431134" expanded="true" signature="1464:1469" ph="..." />
-            <marker date="1533144431134" expanded="true" signature="1998:2003" ph="..." />
-            <marker date="1533144431134" expanded="true" signature="2620:2625" ph="..." />
-            <marker date="1533144431134" expanded="true" signature="3071:3076" ph="..." />
-            <marker date="1533144431134" expanded="true" signature="3433:3434" ph="..." />
-            <marker date="1533144431134" expanded="true" signature="3433:3439" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -482,13 +486,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/model.py">
+    <entry file="file://$USER_HOME$/Anaconda3/envs/tensorflow/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        <state relative-caret-position="78">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_70846-37786 - Nirav Jadeja - Jul 16, 2018 1114 PM-CSCI5409-A4-Niravsinh-B00789139.zip/CSCI5409-A4-Niravsinh-B00789139/REST Framework/mortgage/mortgage/urls.py" />
+    <entry file="file://$PROJECT_DIR$/models/anna.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Sample-Model.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/model_1_training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="809">
+          <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/CharRNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1800">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1533491185048" expanded="true" signature="448:453" ph="..." />
+            <marker date="1533491185048" expanded="true" signature="1093:1098" ph="..." />
+            <marker date="1533491185048" expanded="true" signature="1512:1517" ph="..." />
+            <marker date="1533491185048" expanded="true" signature="2176:2181" ph="..." />
+            <marker date="1533491185048" expanded="true" signature="2860:2865" ph="..." />
+            <marker date="1533491185048" expanded="true" signature="3318:3323" ph="..." />
+            <marker date="1533491185048" expanded="true" signature="3701:3702" ph="..." />
+            <marker date="1533491185048" expanded="true" signature="3701:3707" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/model_1_testing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-522">
+          <caret line="396" column="29" selection-start-line="396" selection-start-column="29" selection-end-line="396" selection-end-column="29" />
         </state>
       </provider>
     </entry>

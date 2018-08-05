@@ -1,0 +1,117 @@
+C:\Users\yichu\Anaconda3\envs\tensorflow\python.exe "C:\Program Files\JetBrains\PyCharm 2018.1.4\helpers\pydev\pydevconsole.py" 52210 52211
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['C:\\Users\\yichu\\Documents\\Projects\\Deep Learning\\dlproject', 'C:/Users/yichu/Documents/Projects/Deep Learning/dlproject'])
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.3.1 -- An enhanced Interactive Python. Type '?' for help.
+PyDev console: using IPython 6.3.1
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)] on win32
+runfile('C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models/test.py', wdir='C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models')
+x
+ [[87 29 27 29  6 63 73 76 29 58]
+ [29 73 63 30 29 73 44 39 76 70]
+ [89 55 73 15 39 81 29 58 53 50]
+ [73 39 76 29 73 56 15 63 70 72]
+ [39 63 30 73  2 35 29  6 81 63]
+ [63 29 76 29 58 70 58 73 70  6]
+ [73 70 72 15 56 76 63 39  6 63]
+ [30 70 16 87 56 40 29 63 16 62]
+ [63 56 73 51 29 44 29 35 56 15]
+ [30 29 48  6 73 73 21 56 40 76]]
+y
+ [[29 27 29  6 63 73 76 29 58 40]
+ [73 63 30 29 73 44 39 76 70 39]
+ [55 73 15 39 81 29 58 53 50 56]
+ [39 76 29 73 56 15 63 70 72 39]
+ [63 30 73  2 35 29  6 81 63 30]
+ [29 76 29 58 70 58 73 70  6 73]
+ [70 72 15 56 76 63 39  6 63 73]
+ [70 16 87 56 40 29 63 16 62 63]
+ [56 73 51 29 44 29 35 56 15 73]
+ [29 48  6 73 73 21 56 40 76  6]]
+WARNING:tensorflow:From C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models/test.py:207: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+See @{tf.nn.softmax_cross_entropy_with_logits_v2}.
+2018-08-03 15:07:46.275201: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2018-08-03 15:07:46.493656: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1392] Found device 0 with properties: 
+name: Quadro M2200 major: 5 minor: 2 memoryClockRate(GHz): 1.036
+pciBusID: 0000:01:00.0
+totalMemory: 4.00GiB freeMemory: 3.33GiB
+2018-08-03 15:07:46.494225: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-03 15:07:46.910875: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-03 15:07:46.911365: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-03 15:07:46.911596: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-03 15:07:46.912108: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+轮数: 1/20...  训练步数: 100...  训练误差: 3.1333...  0.4248 sec/batch
+轮数: 1/20...  训练步数: 200...  训练误差: 2.6005...  0.4322 sec/batch
+轮数: 2/20...  训练步数: 300...  训练误差: 2.3599...  0.4298 sec/batch
+轮数: 2/20...  训练步数: 400...  训练误差: 2.2008...  0.4240 sec/batch
+轮数: 3/20...  训练步数: 500...  训练误差: 2.0941...  0.4304 sec/batch
+轮数: 3/20...  训练步数: 600...  训练误差: 1.9922...  0.4409 sec/batch
+轮数: 4/20...  训练步数: 700...  训练误差: 1.8822...  0.4304 sec/batch
+轮数: 4/20...  训练步数: 800...  训练误差: 1.7852...  0.4259 sec/batch
+轮数: 5/20...  训练步数: 900...  训练误差: 1.7044...  0.4308 sec/batch
+轮数: 5/20...  训练步数: 1000...  训练误差: 1.5842...  0.4704 sec/batch
+轮数: 6/20...  训练步数: 1100...  训练误差: 1.6016...  0.4331 sec/batch
+轮数: 6/20...  训练步数: 1200...  训练误差: 1.5319...  0.4380 sec/batch
+轮数: 7/20...  训练步数: 1300...  训练误差: 1.4593...  0.4323 sec/batch
+轮数: 7/20...  训练步数: 1400...  训练误差: 1.5207...  0.4824 sec/batch
+轮数: 8/20...  训练步数: 1500...  训练误差: 1.4843...  0.4877 sec/batch
+轮数: 8/20...  训练步数: 1600...  训练误差: 1.3962...  0.4906 sec/batch
+轮数: 9/20...  训练步数: 1700...  训练误差: 1.4945...  0.4827 sec/batch
+轮数: 9/20...  训练步数: 1800...  训练误差: 1.3883...  0.4737 sec/batch
+轮数: 10/20...  训练步数: 1900...  训练误差: 1.4879...  0.4816 sec/batch
+轮数: 10/20...  训练步数: 2000...  训练误差: 1.3362...  0.4927 sec/batch
+轮数: 10/20...  训练步数: 2100...  训练误差: 1.3894...  0.5216 sec/batch
+轮数: 11/20...  训练步数: 2200...  训练误差: 1.3359...  0.5309 sec/batch
+轮数: 11/20...  训练步数: 2300...  训练误差: 1.3191...  0.5276 sec/batch
+轮数: 12/20...  训练步数: 2400...  训练误差: 1.3300...  0.5167 sec/batch
+轮数: 12/20...  训练步数: 2500...  训练误差: 1.3585...  0.5449 sec/batch
+轮数: 13/20...  训练步数: 2600...  训练误差: 1.2893...  0.5466 sec/batch
+轮数: 13/20...  训练步数: 2700...  训练误差: 1.3004...  0.5523 sec/batch
+轮数: 14/20...  训练步数: 2800...  训练误差: 1.3256...  0.5449 sec/batch
+轮数: 14/20...  训练步数: 2900...  训练误差: 1.2799...  0.5238 sec/batch
+轮数: 15/20...  训练步数: 3000...  训练误差: 1.2739...  0.5875 sec/batch
+轮数: 15/20...  训练步数: 3100...  训练误差: 1.2863...  0.4308 sec/batch
+轮数: 16/20...  训练步数: 3200...  训练误差: 1.2912...  0.4239 sec/batch
+轮数: 16/20...  训练步数: 3300...  训练误差: 1.2744...  0.4283 sec/batch
+轮数: 17/20...  训练步数: 3400...  训练误差: 1.2812...  0.4304 sec/batch
+轮数: 17/20...  训练步数: 3500...  训练误差: 1.2373...  0.4369 sec/batch
+轮数: 18/20...  训练步数: 3600...  训练误差: 1.2708...  0.4364 sec/batch
+轮数: 18/20...  训练步数: 3700...  训练误差: 1.2451...  0.4303 sec/batch
+轮数: 19/20...  训练步数: 3800...  训练误差: 1.2478...  0.4238 sec/batch
+轮数: 19/20...  训练步数: 3900...  训练误差: 1.2135...  0.4328 sec/batch
+轮数: 19/20...  训练步数: 4000...  训练误差: 1.2900...  0.4278 sec/batch
+轮数: 20/20...  训练步数: 4100...  训练误差: 1.2015...  0.4308 sec/batch
+轮数: 20/20...  训练步数: 4200...  训练误差: 1.2477...  0.4338 sec/batch
+2018-08-03 15:40:34.986836: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-03 15:40:34.987197: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-03 15:40:34.987488: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-03 15:40:34.987689: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-03 15:40:34.987940: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+INFO:tensorflow:Restoring parameters from checkpoints\i4220_l512.ckpt
+Thes coupled to account to\n order to determine, the excitation of an efficient environment is designed by\na specifying convexity of mass magnetic and structures, i.e. the calculating the\ncomplition of the metric strength, wither an entries of topological\nstar instances and the characteristic in the content of the sets in control\nclasses.\n
+The multiplicity of the point and constituent to the classical positive\nstates of metals and also in terms of matter topological structure. This also\nplanet on the proposed algorithm. We study the semiconductor at the\nsubset of two statistics of some scalar flux on the analytical problem and\ntheir experiments on a convex one. The structure of the cancel abelian framework\nfor simple measurements of categories and a carber part of the spectrum of\nthe size and a first path the problem. The surface in this posed with a conditional\nconstruction of the problem of algebraic corrections that to seev the\nspin-decidinary phase treatment of the state in the context, the most phase time\nand the analysis of a fast assumption to the space-of-the-art probabilities\nto the second-case which allows an effect to the production of the space\nof alon-many magnitudes. Anti-energy analysis of motion and analoto structures\ninterest to deformate the dons to severe confinm the position. In this paper, the\npoints of a subspaces with methods in the problem is analozed in\nthe dynamics of the critical system to be a positive state. In the context\nand a second secret space and their periods of the domain with design of\nconditional stochastic algebras. We provide a particular set of the products of\ndisks and the clock to the problem, increasing the extense of a context of\nstandard matrix is an interpretation of the strong exchange in a function of\nasymptotic flat on the domain that of coupling to the desired dimensional\ndensity into a periods in the case. We despribe the corresponding setting of\nthe data scient for each path parameters, such
+INFO:tensorflow:Restoring parameters from checkpoints/i200_l512.ckpt
+2018-08-03 15:40:40.840188: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-03 15:40:40.840543: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-03 15:40:40.840819: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-03 15:40:40.841006: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-03 15:40:40.841260: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+Fardy if ser ether istinen oralin setensere th one tesis tha sersind on thon thicanter on thatin sosinstin al poretins ta thare ationdicotionditin tion th an the\nporeratis thase ther to marased on aritat to fhis on of thor tire tion af of pore arictintite cos itand cot ofithins af on the\nens tine thes an ales anse on porertess al arad ate cortir ato as ontal of rosurend consine tar the tar atin ionse somelis ate sate oned arte ortare af ramined te serins ithat iod th tatis tor tonen tors tar if the the\nsesint ton tans ionderis on al orules tio prareris onthe prisulititer an thene th ante on thersesind whes ontertis anter ateris thor atherins an the th anstin teon redes af ofed omitersicis al the the anlaredy tionen restat an pale site the cenlon in this os rande thes af torenton are on remetare the thaliss an ionte thar ereretiressonthen otissthe cendesset of afitin andesicon tal oner othe are perined cons antedis the cares on te sorilot ans the peltion the\natire s ontal intenronen tor
+INFO:tensorflow:Restoring parameters from checkpoints/i1000_l512.ckpt
+2018-08-03 15:40:44.158623: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-03 15:40:44.158974: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-03 15:40:44.159270: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-03 15:40:44.159466: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-03 15:40:44.159703: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+Fark, We\ntheromeder integration is the\nconviduent from the superatiel space of a\ntime and the perfices of prodicing tector in significance, we simulation and such stracture\nand the structure interactions of tho\nstaristance is analyzed in an ore-of-sected algerratics\nsecter sups, and and stable of the\ncomrused in the distrifice calacteing in the stropy the\nprodected as with a model and couplen be the\ndependence of\nthe care-consistant that show that similital that\ninsolations and a sumply in the desing component\ninfurine corresponding the to and the confect of computer\ncomporenta of the construction of the set-cal alg relation is an in presenten tho distection in the crision is analyse in\na suming on altonical results, we find that in the signacial\ncalacities of the constant in equalination of\ncounce of as in a star scalarity and insormation on a simple of stated and a sumporing are obtaced bith signal spack and shows thas\nand allow approaches that their\nporence of the\nsim
+2018-08-03 15:40:47.693676: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-03 15:40:47.694032: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-03 15:40:47.694307: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-03 15:40:47.694493: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-03 15:40:47.694731: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+INFO:tensorflow:Restoring parameters from checkpoints/i2000_l512.ckpt
+Fary space as the\nsurface sequence of the pair and the contribution and the problem with the consistent\ncomplex theory of prodicting and strong spansar close in the constingted as the\nelectrons are derined to a contribution is a cormulation of the cal of strongly\nsphere an and technique carried with a manifold set of massive computational than\nthe simulateons, and show that the pricrial model is provided for the particles\nof solutions of the most collective potential optimal to transport convex of sevior\nsupergravity of the simulation analysis whise and incurting the propogation of\nspin-size surfaces in the classical control that a non-probability of\ncomputational spin-limiting structures and the continuous correlation and these of\nthe structure formation in the particle interpretation of the computational atom are\nstable and a cluit to the cosmological mesons that the constraints to a set-op\nstart for preserving an articollar care of the stars, which is approach attriptine\ntr

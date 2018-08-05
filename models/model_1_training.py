@@ -1,8 +1,5 @@
 import tensorflow as tf
-import os
 import time
-import math
-import numpy as np
 from models import CharRNN
 
 
@@ -49,5 +46,5 @@ with tf.Session() as sess:
             if (counter % save_every_n == 0):
                 saver.save(sess, "checkpoints/i{}_l{}.ckpt".format(counter, lstm_size))
 
-        saver.save(sess, "checkpoints/i{}_l{}.ckpt".format(counter, lstm_size))
+    saver.save(sess, "checkpoints/i{}_l{}.ckpt".format(counter, lstm_size))
 

@@ -49,8 +49,9 @@ def sample(checkpoint, n_samples, lstm_size, vocab_size, prime="We"):
     saver = tf.train.Saver()
     with tf.Session() as sess:
         # 加载模型参数，恢复训练
-        saver.restore(sess, checkpoint)
         new_state = sess.run(model.initial_state)
+        saver.restore(sess, checkpoint)
+        print(saver.restore())
         for c in prime:
             x = np.zeros((1, 1))
             # 输入单个字符
@@ -63,6 +64,7 @@ def sample(checkpoint, n_samples, lstm_size, vocab_size, prime="We"):
 
         c = pick_top_n(preds, len(CharRNN.vocab))
         # 添加字符到samples中
+        print(c)
         samples.append(CharRNN.int_to_vocab[c])
 
         # 不断生成字符，直到达到指定数目
@@ -96,14 +98,14 @@ print(samp)
 
 # In[22]:
 
-checkpoint = 'checkpoints/i200_l512.ckpt'
-samp = sample(checkpoint, 1000, lstm_size, len(CharRNN.vocab), prime="The")
+checkpoint = 'checkpoints/i1000_l512.ckpt'
+samp = sample(checkpoint, 1000, lstm_size, len(CharRNN.vocab), prime="We")
 print(samp)
 
 # In[23]:
 
 checkpoint = 'checkpoints/i1000_l512.ckpt'
-samp = sample(checkpoint, 1000, lstm_size, len(CharRNN.vocab), prime="We")
+samp = sample(checkpoint, 1000, lstm_size, len(CharRNN.vocab), prime="In")
 print(samp)
 
 # In[24]:
