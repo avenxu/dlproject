@@ -188,12 +188,13 @@ class CharRNN:
 
         cell, self.initial_state = build_lstm(lstm_size, num_layers, batch_size, feature_size, self.keep_prob)
 
-        x_one_hot = tf.one_hot(self.inputs, num_classes)
+        # x_one_hot = tf.one_hot(, num_classes)
 
         print(self.initial_state)
-        print(x_one_hot)
+        # print(x_one_hot)
         print(cell)
-        outputs, state = tf.nn.dynamic_rnn(cell, x_one_hot, initial_state=self.initial_state)
+        self.inputs = tf.cast(self.inputs,tf.float32)
+        outputs, state = tf.nn.dynamic_rnn(cell, self.inputs, initial_state=self.initial_state)
         self.final_state = state
 
         self.prediction, self.logits = build_output(outputs, lstm_size, num_classes)
