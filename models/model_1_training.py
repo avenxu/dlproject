@@ -10,13 +10,14 @@ lstm_size = 512
 num_layers = 2
 learning_rate = 0.001
 keep_prob = 0.5
+feature_size = 9
 
 epochs = 20
 
 save_every_n = 200
 
 model = CharRNN.CharRNN(len(CharRNN.vocab), batch_size=batch_size, num_steps=num_steps, lstm_size=lstm_size, num_layers=num_layers,
-                        learning_rate=learning_rate)
+                        learning_rate=learning_rate, feature_size=feature_size)
 
 saver = tf.train.Saver(max_to_keep=100)
 
@@ -27,7 +28,7 @@ with tf.Session() as sess:
     for e in range(epochs):
         new_state = sess.run(model.initial_state)
         loss = 0
-        for x, y in CharRNN.get_batches(CharRNN.encoded, batch_size, num_steps):
+        for x, y in CharRNN.get_batches(CharRNN.encoded, batch_size, num_steps, feature_size):
             counter += 1
             start = time.time()
             feed = {model.inputs: x,

@@ -1,20 +1,35 @@
-import time
 import numpy as np
 import tensorflow as tf
 
 
 # Load data
-with open('../data/20177.txt', 'r') as f:
+abstracts = []
+text = []
+with open('../data/201777abstract.txt', 'r') as f:
+    abstracts = f.readlines()
+with open('../data/201777abstract.txt', 'r') as f:
     text = f.read()
-# build char vacab
 vocab = sorted(set(text))
-# char-number mapping dictionary
 vocab_to_int = {c: i for i, c in enumerate(vocab)}
-
 int_to_vocab = dict(enumerate(vocab))
 
-# encoding
-encoded = np.array([vocab_to_int[c] for c in text], dtype=np.int32)
+subs = np.loadtxt('../data/201777subject.txt')
+
+data = []
+for i in range(len(abstracts)):
+    encoded = np.array([vocab_to_int[c] for c in abstracts[i]], dtype=np.int32)
+    encodedWithSub = []
+    for j in range(len(encoded)):
+        # concat each char and subject
+        encodedWithSub.append(np.append(encoded[j], subs[i]))
+    data.append(encodedWithSub)
+
+merged_data = []
+for sublist in data:
+    for item in sublist:
+        merged_data.append(item)
+
+merged_data_matrix = np.array(merged_data)
 
 text[:100]
 
@@ -22,7 +37,7 @@ encoded[:100]
 
 len(vocab)
 
-def get_batches(arr, n_seqs, n_steps):
+def get_batches(arr, n_seqs, n_steps, feature_size):
     """
     mini-batch processing
     :param arr: array to be split
@@ -36,25 +51,32 @@ def get_batches(arr, n_seqs, n_steps):
     # we only keep the finished batches and ditch the rest
     arr = arr[:batch_size * n_batches]
 
-    arr = arr.reshape((n_seqs, -1))
+    arr = arr.reshape((n_seqs, n_steps, -1, feature_size))
 
-    for n in range(0, arr.shape[1], n_steps):
+    for n in range(0, n_seqs, n_steps):
         # inputs
-        x = arr[:, n:n + n_steps]
+        x = np.array(arr[:, n:n + n_steps, :])
         # targets
-        y = np.zeros_like(x)
-        y[:, :-1], y[:, -1] = x[:, 1:], x[:, 0]
+        y = np.zeros(shape=(x.shape[0], x.shape[1], x.shape[2]))
+        y[:,:,:-1], y[:, :, -1] = x[:, :, 1:, 0], x[:, :, 0, 0]
         yield x, y
 
 
-def build_inputs(num_seqs, num_steps):
+# """Testing"""
+# batches = get_batches(merged_data_matrix, 10, 50, 9)
+# x, y = next(batches)
+#
+# print('x\n', x[:10, :10])
+# print('\ny\n', y[:10, :10])
+
+def build_inputs(num_seqs, num_steps, feature_size):
     '''
 
     :param num_seqs:
     :param num_steps:
     :return:
     '''
-    inputs = tf.placeholder(tf.int32, shape=(num_seqs, num_steps), name='inputs')
+    inputs = tf.placeholder(tf.int32, shape=(num_seqs, num_steps, feature_size), name='inputs')
     targets = tf.placeholder(tf.int32, shape=(num_seqs, num_steps), name='targets')
 
     # keep_prob
@@ -62,7 +84,7 @@ def build_inputs(num_seqs, num_steps):
 
     return inputs, targets, keep_prob
 
-def build_lstm(lstm_size, num_layers, batch_size, keep_prob):
+def build_lstm(lstm_size, num_layers, batch_size, feature_size, keep_prob):
     '''
 
     :param lstm_size:
@@ -84,7 +106,7 @@ def build_lstm(lstm_size, num_layers, batch_size, keep_prob):
     # stack lstm cells
     cell = tf.contrib.rnn.MultiRNNCell(lstm_cells)
 
-    initial_state = cell.zero_state(batch_size, tf.float32)
+    initial_state = cell.zero_state((batch_size, feature_size), tf.float32)
 
     return cell, initial_state
 
@@ -155,16 +177,16 @@ class CharRNN:
 
     def __init__(self, num_classes, batch_size=64, num_steps=50,
                  lstm_size=128, num_layers=2, learning_rate=0.001,
-                 grad_clip=5, sampling=False):
+                 grad_clip=5, sampling=False, feature_size = 9):
         if sampling == True:
             batch_size, num_steps = 1, 1
         else:
             batch_size, num_steps = batch_size, num_steps
         tf.reset_default_graph()
 
-        self.inputs, self.targets, self.keep_prob = build_inputs(batch_size, num_steps)
+        self.inputs, self.targets, self.keep_prob = build_inputs(batch_size, num_steps, feature_size)
 
-        cell, self.initial_state = build_lstm(lstm_size, num_layers, batch_size, self.keep_prob)
+        cell, self.initial_state = build_lstm(lstm_size, num_layers, batch_size, feature_size, self.keep_prob)
 
         x_one_hot = tf.one_hot(self.inputs, num_classes)
 

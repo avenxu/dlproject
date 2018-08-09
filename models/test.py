@@ -126,15 +126,15 @@ print('\ny\n', y[:10, :10])
 
 # In[9]:
 
-def build_inputs(num_seqs, num_steps, sub_size):
+def build_inputs(num_seqs, num_steps, feature_size):
     '''
     构建输入层
 
     num_seqs: 每个batch中的序列个数
     num_steps: 每个序列包含的字符数
     '''
-    inputs = tf.placeholder(tf.int32, shape=(num_seqs, num_steps, sub_size), name='inputs')
-    targets = tf.placeholder(tf.int32, shape=(num_seqs, num_steps, sub_size), name='targets')
+    inputs = tf.placeholder(tf.int32, shape=(num_seqs, num_steps, feature_size), name='inputs')
+    targets = tf.placeholder(tf.int32, shape=(num_seqs, num_steps, feature_size), name='targets')
 
     # 加入keep_prob
     keep_prob = tf.placeholder(tf.float32, name='keep_prob')
