@@ -49,9 +49,8 @@ def sample(checkpoint, n_samples, lstm_size, vocab_size, prime="We"):
     saver = tf.train.Saver()
     with tf.Session() as sess:
         # 加载模型参数，恢复训练
-        new_state = sess.run(model.initial_state)
         saver.restore(sess, checkpoint)
-        print(saver.restore())
+        new_state = sess.run(model.initial_state)
         for c in prime:
             x = np.zeros((1, 1))
             # 输入单个字符

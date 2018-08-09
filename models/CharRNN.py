@@ -4,10 +4,10 @@ import tensorflow as tf
 
 
 # Load data
-with open('../data/anna.txt', 'r') as f:
+with open('../data/20177.txt', 'r') as f:
     text = f.read()
 # build char vacab
-vocab = set(text)
+vocab = sorted(set(text))
 # char-number mapping dictionary
 vocab_to_int = {c: i for i, c in enumerate(vocab)}
 

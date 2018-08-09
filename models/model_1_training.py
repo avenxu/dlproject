@@ -12,6 +12,7 @@ learning_rate = 0.001
 keep_prob = 0.5
 
 epochs = 20
+
 save_every_n = 200
 
 model = CharRNN.CharRNN(len(CharRNN.vocab), batch_size=batch_size, num_steps=num_steps, lstm_size=lstm_size, num_layers=num_layers,

@@ -16,20 +16,43 @@ from collections import namedtuple
 import numpy as np
 import tensorflow as tf
 
-# # 1 数据加载与预处理
+# # 1 Data preprocess
 
 # In[2]:
-
-with open('../data/201777.txt', 'r') as f:
+abstracts = []
+text = []
+with open('../data/201777abstract.txt', 'r') as f:
+    abstracts = f.readlines()
+with open('../data/201777abstract.txt', 'r') as f:
     text = f.read()
 vocab = set(text)
-vocab_to_int = {c: i for i, c in enumerate(vocab)}
+vocab_to_int = {c: i for i, c in enumerate(sorted(vocab))}
 int_to_vocab = dict(enumerate(vocab))
-encoded = np.array([vocab_to_int[c] for c in text], dtype=np.int32)
+
+subs = np.loadtxt('../data/201777subject.txt')
+
+data = []
+for i in range(len(abstracts)):
+    encoded = np.array([vocab_to_int[c] for c in abstracts[i]], dtype=np.int32)
+    encodedWithSub = []
+    for j in range(len(encoded)):
+        # concat each char and subject
+        encodedWithSub.append(np.append(encoded[j], subs[i]))
+    data.append(encodedWithSub)
+
+merged_data = []
+for sublist in data:
+    for item in sublist:
+        merged_data.append(item)
+
+merged_data_matrix = np.array(merged_data)
+# np.savetxt("./data/mergeddata201777.txt",merged_data_matrix,fmt='%i')
+
+
 
 # In[3]:
 
-text[:100]
+abstracts[:100]
 
 # In[4]:
 
@@ -72,14 +95,14 @@ def get_batches(arr, n_seqs, n_steps):
     arr = arr[:batch_size * n_batches]
 
     # 重塑
-    arr = arr.reshape((n_seqs, -1))
+    arr = arr.reshape((n_seqs,n_steps, -1))
 
-    for n in range(0, arr.shape[1], n_steps):
+    for n in range(0, n_seqs, n_steps):
         # inputs
-        x = arr[:, n:n + n_steps]
+        x = arr[:, n:n + n_steps, :]
         # targets
         y = np.zeros_like(x)
-        y[:, :-1], y[:, -1] = x[:, 1:], x[:, 0]
+        y[:, :-1, :], y[:, -1, :] = x[:, 1:, :], x[:, 0, :]
         yield x, y
 
 
@@ -87,7 +110,7 @@ def get_batches(arr, n_seqs, n_steps):
 
 # In[7]:
 
-batches = get_batches(encoded, 10, 50)
+batches = get_batches(merged_data_matrix, 10, 50)
 x, y = next(batches)
 
 # In[8]:
@@ -103,15 +126,15 @@ print('\ny\n', y[:10, :10])
 
 # In[9]:
 
-def build_inputs(num_seqs, num_steps):
+def build_inputs(num_seqs, num_steps, sub_size):
     '''
     构建输入层
 
     num_seqs: 每个batch中的序列个数
     num_steps: 每个序列包含的字符数
     '''
-    inputs = tf.placeholder(tf.int32, shape=(num_seqs, num_steps), name='inputs')
-    targets = tf.placeholder(tf.int32, shape=(num_seqs, num_steps), name='targets')
+    inputs = tf.placeholder(tf.int32, shape=(num_seqs, num_steps, sub_size), name='inputs')
+    targets = tf.placeholder(tf.int32, shape=(num_seqs, num_steps, sub_size), name='targets')
 
     # 加入keep_prob
     keep_prob = tf.placeholder(tf.float32, name='keep_prob')
@@ -242,7 +265,7 @@ class CharRNN:
 
     def __init__(self, num_classes, batch_size=64, num_steps=50,
                  lstm_size=128, num_layers=2, learning_rate=0.001,
-                 grad_clip=5, sampling=False):
+                 grad_clip=5, sampling=False, sub_size = 9):
 
         # 如果sampling是True，则采用SGD
         if sampling == True:
@@ -253,7 +276,7 @@ class CharRNN:
         tf.reset_default_graph()
 
         # 输入层
-        self.inputs, self.targets, self.keep_prob = build_inputs(batch_size, num_steps)
+        self.inputs, self.targets, self.keep_prob = build_inputs(batch_size, num_steps, sub_size)
 
         # LSTM层
         cell, self.initial_state = build_lstm(lstm_size, num_layers, batch_size, self.keep_prob)
@@ -293,50 +316,51 @@ lstm_size = 512  # Size of hidden layers in LSTMs
 num_layers = 2  # Number of LSTM layers
 learning_rate = 0.001  # Learning rate
 keep_prob = 0.5  # Dropout keep probability
+sub_size = 9
 
 # In[16]:
 
-# epochs = 20
-# # 每n轮进行一次变量保存
-# save_every_n = 200
-#
-# model = CharRNN(len(vocab), batch_size=batch_size, num_steps=num_steps,
-#                 lstm_size=lstm_size, num_layers=num_layers,
-#                 learning_rate=learning_rate)
-#
-# saver = tf.train.Saver(max_to_keep=100)
-# with tf.Session() as sess:
-#     sess.run(tf.global_variables_initializer())
-#
-#     counter = 0
-#     for e in range(epochs):
-#         # Train network
-#         new_state = sess.run(model.initial_state)
-#         loss = 0
-#         for x, y in get_batches(encoded, batch_size, num_steps):
-#             counter += 1
-#             start = time.time()
-#             feed = {model.inputs: x,
-#                     model.targets: y,
-#                     model.keep_prob: keep_prob,
-#                     model.initial_state: new_state}
-#             batch_loss, new_state, _ = sess.run([model.loss,
-#                                                  model.final_state,
-#                                                  model.optimizer],
-#                                                 feed_dict=feed)
-#
-#             end = time.time()
-#             # control the print lines
-#             if counter % 100 == 0:
-#                 print('轮数: {}/{}... '.format(e + 1, epochs),
-#                       '训练步数: {}... '.format(counter),
-#                       '训练误差: {:.4f}... '.format(batch_loss),
-#                       '{:.4f} sec/batch'.format((end - start)))
-#
-#             if (counter % save_every_n == 0):
-#                 saver.save(sess, "checkpoints/i{}_l{}.ckpt".format(counter, lstm_size))
-#
-#     saver.save(sess, "checkpoints/i{}_l{}.ckpt".format(counter, lstm_size))
+epochs = 20
+# 每n轮进行一次变量保存
+save_every_n = 200
+
+model = CharRNN(len(vocab), batch_size=batch_size, num_steps=num_steps,
+                lstm_size=lstm_size, num_layers=num_layers,
+                learning_rate=learning_rate)
+
+saver = tf.train.Saver(max_to_keep=100)
+with tf.Session() as sess:
+    sess.run(tf.global_variables_initializer())
+
+    counter = 0
+    for e in range(epochs):
+        # Train network
+        new_state = sess.run(model.initial_state)
+        loss = 0
+        for x, y in get_batches(merged_data_matrix, batch_size, num_steps):
+            counter += 1
+            start = time.time()
+            feed = {model.inputs: x,
+                    model.targets: y,
+                    model.keep_prob: keep_prob,
+                    model.initial_state: new_state}
+            batch_loss, new_state, _ = sess.run([model.loss,
+                                                 model.final_state,
+                                                 model.optimizer],
+                                                feed_dict=feed)
+
+            end = time.time()
+            # control the print lines
+            if counter % 100 == 0:
+                print('轮数: {}/{}... '.format(e + 1, epochs),
+                      '训练步数: {}... '.format(counter),
+                      '训练误差: {:.4f}... '.format(batch_loss),
+                      '{:.4f} sec/batch'.format((end - start)))
+
+            if (counter % save_every_n == 0):
+                saver.save(sess, "checkpoints/i{}_l{}.ckpt".format(counter, lstm_size))
+
+    saver.save(sess, "checkpoints/i{}_l{}.ckpt".format(counter, lstm_size))
 
 # In[17]:
 
