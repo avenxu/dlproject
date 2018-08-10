@@ -5,15 +5,15 @@ import tensorflow as tf
 # Load data
 abstracts = []
 text = []
-with open('../data/201777abstract.txt', 'r') as f:
+with open('../data/20177abstract.txt', 'r') as f:
     abstracts = f.readlines()
-with open('../data/201777abstract.txt', 'r') as f:
+with open('../data/20177abstract.txt', 'r') as f:
     text = f.read()
 vocab = sorted(set(text))
 vocab_to_int = {c: i for i, c in enumerate(vocab)}
 int_to_vocab = dict(enumerate(vocab))
 
-subs = np.loadtxt('../data/201777subject.txt')
+subs = np.loadtxt('../data/20177subject.txt')
 
 data = []
 for i in range(len(abstracts)):
@@ -51,14 +51,14 @@ def get_batches(arr, n_seqs, n_steps, feature_size):
     # we only keep the finished batches and ditch the rest
     arr = arr[:batch_size * n_batches]
 
-    arr = arr.reshape((n_seqs, n_steps, -1, feature_size))
+    arr = arr.reshape((-1, n_seqs, n_steps, feature_size))
 
-    for n in range(0, n_seqs, n_steps):
+    for n in range(arr.shape[0]):
         # inputs
-        x = np.array(arr[:, n:n + n_steps, :])
+        x = np.array(arr[n])
         # targets
-        y = np.zeros(shape=(x.shape[0], x.shape[1], x.shape[2]))
-        y[:,:,:-1], y[:, :, -1] = x[:, :, 1:, 0], x[:, :, 0, 0]
+        y = np.zeros(shape=(x.shape[0], x.shape[1]))
+        y[:, :-1], y[ :, -1] = x[:, 1:, 0], x[:, 0, 0]
         yield x, y
 
 
@@ -106,7 +106,7 @@ def build_lstm(lstm_size, num_layers, batch_size, feature_size, keep_prob):
     # stack lstm cells
     cell = tf.contrib.rnn.MultiRNNCell(lstm_cells)
 
-    initial_state = cell.zero_state((batch_size, feature_size), tf.float32)
+    initial_state = cell.zero_state(batch_size, tf.float32)
 
     return cell, initial_state
 

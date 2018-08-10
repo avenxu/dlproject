@@ -46,7 +46,7 @@ for sublist in data:
         merged_data.append(item)
 
 merged_data_matrix = np.array(merged_data)
-# np.savetxt("./data/mergeddata201777.txt",merged_data_matrix,fmt='%i')
+np.savetxt("./data/mergeddata201777.txt",merged_data_matrix,fmt='%i')
 
 
 

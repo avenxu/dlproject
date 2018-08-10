@@ -28,7 +28,7 @@ with tf.Session() as sess:
     for e in range(epochs):
         new_state = sess.run(model.initial_state)
         loss = 0
-        for x, y in CharRNN.get_batches(CharRNN.encoded, batch_size, num_steps, feature_size):
+        for x, y in CharRNN.get_batches(CharRNN.merged_data_matrix, batch_size, num_steps, feature_size):
             counter += 1
             start = time.time()
             feed = {model.inputs: x,
