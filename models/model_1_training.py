@@ -4,17 +4,17 @@ from models import CharRNN
 
 
 # Hyperparameters
-batch_size = 100
-num_steps = 100
+batch_size = 200
+num_steps = 200
 lstm_size = 512
 num_layers = 2
 learning_rate = 0.001
 keep_prob = 0.5
 feature_size = 9
 
-epochs = 20
+epochs = 30
 
-save_every_n = 200
+save_every_n = 400
 
 model = CharRNN.CharRNN(len(CharRNN.vocab), batch_size=batch_size, num_steps=num_steps, lstm_size=lstm_size, num_layers=num_layers,
                         learning_rate=learning_rate, feature_size=feature_size)
@@ -31,8 +31,9 @@ with tf.Session() as sess:
         for x, y in CharRNN.get_batches(CharRNN.merged_data_matrix, batch_size, num_steps, feature_size):
             counter += 1
             start = time.time()
-            feed = {model.inputs: x,
+            feed = {model.inputs: x[:,:,0],
                     model.targets: y,
+                    model.subject: x[:,:,1:],
                     model.keep_prob: keep_prob,
                     model.initial_state: new_state}
             batch_loss, new_state, _ = sess.run([model.loss, model.final_state, model.optimizer], feed_dict=feed)

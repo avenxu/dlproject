@@ -1,0 +1,93 @@
+# Hyperparameters
+batch_size = 200
+num_steps = 200
+lstm_size = 512
+num_layers = 2
+learning_rate = 0.001
+keep_prob = 0.5
+feature_size = 9
+
+C:\Users\yichu\Anaconda3\envs\tensorflow\python.exe "C:\Program Files\JetBrains\PyCharm 2018.1.4\helpers\pydev\pydevconsole.py" 65175 65176
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['C:\\Users\\yichu\\Documents\\Projects\\Deep Learning\\dlproject', 'C:/Users/yichu/Documents/Projects/Deep Learning/dlproject'])
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.3.1 -- An enhanced Interactive Python. Type '?' for help.
+PyDev console: using IPython 6.3.1
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)] on win32
+runfile('C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models/model_1_training.py', wdir='C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models')
+(LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros:0' shape=(200, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros_1:0' shape=(200, 512) dtype=float32>), LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros:0' shape=(200, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros_1:0' shape=(200, 512) dtype=float32>))
+<tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x00000200A2174828>
+X shape: Tensor("Reshape:0", shape=(40000, 512), dtype=float32) and W shape: <tf.Variable 'softmax/Variable:0' shape=(512, 96) dtype=float32_ref>
+WARNING:tensorflow:From C:\Users\yichu\Documents\Projects\Deep Learning\dlproject\models\CharRNN.py:155: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+See @{tf.nn.softmax_cross_entropy_with_logits_v2}.
+2018-08-10 10:22:51.146565: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2018-08-10 10:22:51.341122: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1392] Found device 0 with properties: 
+name: Quadro M2200 major: 5 minor: 2 memoryClockRate(GHz): 1.036
+pciBusID: 0000:01:00.0
+totalMemory: 4.00GiB freeMemory: 3.33GiB
+2018-08-10 10:22:51.341581: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-10 10:22:51.716382: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-10 10:22:51.716666: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-10 10:22:51.716871: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-10 10:22:51.717160: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+Epoch: 10/30 Training Steps: 500... Training loss: 2.5008885860443115... 1.1860 sec/batch
+Epoch: 20/30 Training Steps: 1000... Training loss: 2.132359027862549... 1.1872 sec/batch
+Epoch: 29/30 Training Steps: 1500... Training loss: 1.8787890672683716... 1.1937 sec/batch
+
+C:\Users\yichu\Anaconda3\envs\tensorflow\python.exe "C:\Program Files\JetBrains\PyCharm 2018.1.4\helpers\pydev\pydevconsole.py" 49697 49698
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['C:\\Users\\yichu\\Documents\\Projects\\Deep Learning\\dlproject', 'C:/Users/yichu/Documents/Projects/Deep Learning/dlproject'])
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.3.1 -- An enhanced Interactive Python. Type '?' for help.
+PyDev console: using IPython 6.3.1
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)] on win32
+runfile('C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models/model_1_testing.py', wdir='C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models')
+(LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>), LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>))
+<tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x00000237EB77B940>
+X shape: Tensor("Reshape:0", shape=(1, 512), dtype=float32) and W shape: <tf.Variable 'softmax/Variable:0' shape=(512, 96) dtype=float32_ref>
+WARNING:tensorflow:From C:\Users\yichu\Documents\Projects\Deep Learning\dlproject\models\CharRNN.py:155: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+See @{tf.nn.softmax_cross_entropy_with_logits_v2}.
+2018-08-10 10:56:53.115729: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2018-08-10 10:56:53.310163: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1392] Found device 0 with properties: 
+name: Quadro M2200 major: 5 minor: 2 memoryClockRate(GHz): 1.036
+pciBusID: 0000:01:00.0
+totalMemory: 4.00GiB freeMemory: 3.33GiB
+2018-08-10 10:56:53.310615: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-10 10:56:53.686320: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-10 10:56:53.686641: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-10 10:56:53.686828: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-10 10:56:53.687098: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3053 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+INFO:tensorflow:Restoring parameters from checkpoints\i1560_l512.ckpt
+70
+Wee Ii Wa T I Ten Wl Wip Sernnnpps\ Ts\sspn Te\s Io T\\nnpspp ae aesss Isnssn as\ a prsns To Ter Iispo sepnon\\na asnssss\\ a To Ie T Tesnp\\pp\\\\\\ T As I Aen I Son Tl\ Tl Tl Tlrnnn s Tonsn Tes Tl W T I Wio Tislsn\pspss spss so\\\sas A\\ T tonnn s\ T Wsrsosnpspa s ao asnnan ar ss socosons\s\\ A A S T To Tlr Wo\nnssns s sospsnsns\ T A\\nn a\s srpnsn aa Ie Trns aoprnn peepnapn mssoa\\ss\\s\\ \ Tonsnsp\\\$ as ae\sn ae\snn mor pos ar\ asna posrnssa aee\ arsns ar\a trns arra\snass\$ wsnr\\ pa\ans a\a\aa Ta I ssrn ts To\pspspp soas\s\$ are\nsa\$ ss\n\sns\$ se\ aeesssa a aes\nn\s\\a\ I\ so ton pes To I Si Ionsnns Ts soppossnp spsaas\$\\\$ a aon a paoppsss\ asn\sa I Wo\\nnssp\sa$\ W\ A I Tio Ioonn I\ I Wlnssps s T Te Tononsnss pespp se\\s\ps\s$ iennn\\\\ sa ts aes\nn ao\ss\sas ses I Tan te\ Te\ A Wonn tnr I I To W W S Ta Ilo Ti Wonn Wl T Tannlnpp A I Wons Wonsl I sons Wo Tonnnssps\\\ A We So Wosdsnps\ I Ti Wo\s\ T\ A Sooo\sn s pe Te As\s Ils To\p Tonnn srprapns popnp\p\s\$ as seson Te\nnna\\a\\ I\ To Tos A\ Se Ioodns\n\pa Ien\s\\\\ Ts\n T Io\sns To sa srr Aesnsp\ Ie Tossn\s asnso\as\$ se\ tr ar\osn sesaassa\$ we ssrsnssna ms\ Ie\\a\pn\ss Ae I\os T Ian A\ Ass A\n T A W A\ T A Win Winsnnnn s T Tenslnp\s\\\\\ Se\n A Io\ Ie\s T Wannnnn\ Tsno I\ Il A Torns Te To Tosspsss Is Ie\\n\np\p\sa\$. wev\\s $ pe\s\ss\$\ A Sen\ I\dns Ts T Ao\ Te Ie Ts Ss Iens Iesnn slrnssp aepssnsnn\ as\s T Io Ws\s\ A Al Tors T Te I S T Il I\slln T T Ionsnsspn\\\ T Wis Wo T sass Ws Wo Terdlss\ns\p se T\\snn\s ao\s\\s\\\ S Ae\ Tssnn as Te A Tero to to Wrpdpnsn\sps\a I T\ Wa\snpspnna a Ta Wrn sonnos\sn\$ sn aasoonnna\\\\\\\\$ w ser\ss\\\a\$\ T\\\snsnnsa$ as to prsosnsss\\\ A\\ss\\n\$ aa\ pe\as\ ps sesnnnn ao sae assan\s a aa asssps psspsssn$\\$,\ T sernn I I Wa\snnp\\ I T Tas Tosns s Ton S Tlnss To A Al T Tos Teno I I I W To Fi I Ion Tennsss T sirnsnssm\ms\\ A Ti Io\ T\\ W tonsnnp\pps\ T T A\o\ I\ Tor\sns\ s\ Iess sonspn\snss$ isennss\$ wrsnsn a s srsnn\\ a Ti Ieo\ns a Te W Iaods Sosns Is\sn\p\pp\p a Ae\nn tr
+(LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>), LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>))
+<tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x00000237877BC2B0>
+X shape: Tensor("Reshape:0", shape=(1, 512), dtype=float32) and W shape: <tf.Variable 'softmax/Variable:0' shape=(512, 96) dtype=float32_ref>
+INFO:tensorflow:Restoring parameters from checkpoints/i1200_l512.ckpt
+2018-08-10 10:57:00.006793: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-10 10:57:00.007109: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-10 10:57:00.007431: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-10 10:57:00.007633: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-10 10:57:00.007869: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3053 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+66
+Wea t tas\ I A A Io\o I\o Il A Tow T Ion Wi Wo Tp Ip W A Wepl To Te I\ S Ao A T\w Ti W Io Il T Aooo I Ti\ T A I T To Tlw Wi T po A T poon T I A\ A Wow W\ Io I I fpos Ii Io W\pn\\ wp Tp W Tep W Tioo\ I Ionnn W Wons T Te\ Ipnwnn\ Tp S Tpnnsns w wppn W\ Ao T Ap\ T Wiwp I T T Wop Io T Ipo Ipnns w Ti Tewn T\ W Toon Te I\\w Ip A T Te Tpwo W pownp A, won T won I\ w Tpp W pipn\ Wewn\ wos Tpn Te\ We\ Il To\s T\ Io\ Io Ton\ T I\ Wpno T Ten T I Aoo I\w W Aonn I I\ Wppn Wo\\ Wo T Wen Wop Wo\ Il Ap\ I\n S pe Se\ I Iowos I Te\ S I I A\o Al T Tipon Ip To A ppnpn W wipp\ I peno A p Ti Wion wp Top Ao Tiw Wow T Io T p Iewo W T pa T I Apon I Te Aoo Ti T T T Town,p wen T Wpp A W Ai\ Fooo Wew Te\ To\ T Wew A\w\ Tp Wo I Tpo S T Tiw I p A A To T W Tools\ Tin Io T\\sn T Te A\ I\ Tono W Wpp W Io\ I\\ww, I Townsp Wo Ap Wpn S Wens I\ W T pipnp T W pen Io W pop T I pip Ii A W Te\, Ti Ip A W Tew W T Ti Ti Wop\\ I T Wo I\ A Wpoo T Ti Wown I W p I Weoo, T T\\ T\ We W T Wiw A T Wowo Ioon\s T\nnn We T I\ Tp Tep\ T ppps w
+(LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>), LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>))
+<tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x0000023892804E48>
+X shape: Tensor("Reshape:0", shape=(1, 512), dtype=float32) and W shape: <tf.Variable 'softmax/Variable:0' shape=(512, 96) dtype=float32_ref>
+2018-08-10 10:57:03.293477: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-10 10:57:03.293827: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-10 10:57:03.294166: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-10 10:57:03.294362: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-10 10:57:03.294594: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3053 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+INFO:tensorflow:Restoring parameters from checkpoints/i1200_l512.ckpt
+1
+In aa Ap\s Tp W W Aepn Ti S I\w Wen I Ioon W A po T I Wewl Ti\ Te T To T Wows T Tpos W Ie Towps T wosnss W Tepns W To A Weon Wo Wp T\ T\\sn\ I Ioo I Tep Tonsssn wepop Tonnpssp\ T\\ T pew Te Tpn I A Ton Wownp A Wop T Ap\ Wo I Toop Il T A pow W Wpw T Top Towsn\ Tew Io I T A Tow Top Ionn,\ W T T W Iion Wo T Ae\n I\ A A W Ii\ To\ T\ T Aoonsns Wp Tonsn W To A pioo To T pio Wow T Ieo I\ A\ I We W po Ai\w Il\ Tow\ Apo Wo I To T p Tp Fp T Top T Wono Wo\ W\ I\ Wp T Top F\\ T Topsn T pe Iionn\ Wopnpn I\ A\ T A Ii To T paoo Tonnn T pos Tep T A Ao Wi F pep Wiw T W T Tiwsn W To F\ T\\s Ten\n Wl I T Too To T I Apwo To\\ To Wonnsnn A Ie\ A peop Te I\ A I Wo Io W T A Wi T f Aon Tlns T\ A I\ I A fep I Won Ton I\ T W peop T\p T T I Wi Ip T A A Too I fop To I T T poos T Wo Tios I A Tinw W\ I Tono Ip Tp I A Te Ti Too A A T fo Wp W I A f T fo A\o I Ionns W wep W\ We Wpnsn Tp A Tpn To W Wi Ippn T Io T Ain A Iows T Ten Te To Wop Tewnp Wewn I Ipoo We Tewo\ I Ion\nn, wn To I\ Ilo\\\ T\ I\w Wo To T\\\sn A po Io T 
+

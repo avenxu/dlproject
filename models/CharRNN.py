@@ -76,13 +76,15 @@ def build_inputs(num_seqs, num_steps, feature_size):
     :param num_steps:
     :return:
     '''
-    inputs = tf.placeholder(tf.int32, shape=(num_seqs, num_steps, feature_size), name='inputs')
+    inputs = tf.placeholder(tf.int32, shape=(num_seqs, num_steps), name='inputs')
+    subject = tf.placeholder(tf.int32, shape=(num_seqs, num_steps, 8), name='inputs')
+
     targets = tf.placeholder(tf.int32, shape=(num_seqs, num_steps), name='targets')
 
     # keep_prob
     keep_prob = tf.placeholder(tf.float32, name='keep_prob')
 
-    return inputs, targets, keep_prob
+    return inputs, targets, subject, keep_prob
 
 def build_lstm(lstm_size, num_layers, batch_size, feature_size, keep_prob):
     '''
@@ -184,17 +186,19 @@ class CharRNN:
             batch_size, num_steps = batch_size, num_steps
         tf.reset_default_graph()
 
-        self.inputs, self.targets, self.keep_prob = build_inputs(batch_size, num_steps, feature_size)
+        self.inputs, self.targets, self.subject, self.keep_prob = build_inputs(batch_size, num_steps, feature_size)
 
         cell, self.initial_state = build_lstm(lstm_size, num_layers, batch_size, feature_size, self.keep_prob)
 
-        # x_one_hot = tf.one_hot(, num_classes)
-
+        x_one_hot = tf.one_hot(self.inputs, num_classes, dtype=tf.int32)
         print(self.initial_state)
         # print(x_one_hot)
         print(cell)
-        self.inputs = tf.cast(self.inputs,tf.float32)
-        outputs, state = tf.nn.dynamic_rnn(cell, self.inputs, initial_state=self.initial_state)
+
+        self.subject = tf.cast(self.subject, dtype=tf.int32)
+        self.new_inputs = tf.concat((x_one_hot, self.subject), axis=-1)
+        self.new_inputs = tf.cast(self.new_inputs, dtype=tf.float32)
+        outputs, state = tf.nn.dynamic_rnn(cell, self.new_inputs, initial_state=self.initial_state)
         self.final_state = state
 
         self.prediction, self.logits = build_output(outputs, lstm_size, num_classes)
