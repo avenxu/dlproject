@@ -51,10 +51,11 @@ def sample(checkpoint, n_samples, lstm_size, vocab_size, prime="We", subject=[0,
             x = np.zeros((1, 1))
             # input single char
             x[0, 0] = CharRNN.vocab_to_int[c]
-            x = np.reshape(np.append(x[0], subject), (1, 1, -1))
+            subject_reshape = np.reshape(subject, (1, 1, -1)).astype(dtype=int)
 
             feed = {model.inputs: x,
                     model.keep_prob: 1.,
+                    model.subject: subject_reshape,
                     model.initial_state: new_state}
             preds, new_state = sess.run([model.prediction, model.final_state],
                                         feed_dict=feed)
@@ -67,8 +68,10 @@ def sample(checkpoint, n_samples, lstm_size, vocab_size, prime="We", subject=[0,
         # generate new chars till the limit
         for i in range(n_samples):
             x[0, 0] = c
+            subject_reshape = np.reshape(subject, (1, 1, -1)).astype(dtype=int)
             feed = {model.inputs: x,
                     model.keep_prob: 1.,
+                    model.subject: subject_reshape,
                     model.initial_state: new_state}
             preds, new_state = sess.run([model.prediction, model.final_state],
                                         feed_dict=feed)
