@@ -85,20 +85,20 @@ def sample(checkpoint, n_samples, lstm_size, vocab_size, prime="We", subject=[0,
 
 lstm_size = 512
 # 'Physics', 'Mathematics', 'Computer Science', 'Quantitative Biology', 'Quantitative Finance', 'Statistics', 'Electrical Engineering and Systems Science', 'Economics'
-
+subject=[0,0,0,0,0,0,0,1]
 #
 checkpoint = tf.train.latest_checkpoint('checkpoints')
-samp = sample(checkpoint, 2000, lstm_size, len(CharRNN.vocab), prime="We", subject=[0,0,1,0,0,0,0,0])
+samp = sample(checkpoint, 1000, lstm_size, len(CharRNN.vocab), prime="We", subject=subject)
 print(samp)
 
 
-checkpoint = 'checkpoints/i1200_l512.ckpt'
-samp = sample(checkpoint, 1000, lstm_size, len(CharRNN.vocab), prime="We", subject=[0,0,1,0,0,0,0,0])
+checkpoint = 'checkpoints/i86000_l512.ckpt'
+samp = sample(checkpoint, 1000, lstm_size, len(CharRNN.vocab), prime="We", subject=subject)
 print(samp)
 
 
-checkpoint = 'checkpoints/i1200_l512.ckpt'
-samp = sample(checkpoint, 1000, lstm_size, len(CharRNN.vocab), prime="In", subject=[0,0,1,0,0,0,0,0])
+checkpoint = 'checkpoints/i86800_l512.ckpt'
+samp = sample(checkpoint, 1000, lstm_size, len(CharRNN.vocab), prime="In", subject=subject)
 print(samp)
 
 # In[24]:

@@ -1,0 +1,54 @@
+C:\Users\yichu\Anaconda3\envs\tensorflow\python.exe "C:\Program Files\JetBrains\PyCharm 2018.1.4\helpers\pydev\pydevconsole.py" 51179 51180
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['C:\\Users\\yichu\\Documents\\Projects\\Deep Learning\\dlproject', 'C:/Users/yichu/Documents/Projects/Deep Learning/dlproject'])
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.3.1 -- An enhanced Interactive Python. Type '?' for help.
+PyDev console: using IPython 6.3.1
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)] on win32
+runfile('C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models/model_1_testing.py', wdir='C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models')
+(LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>), LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>))
+<tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x000002868FDFF4A8>
+X shape: Tensor("Reshape:0", shape=(1, 512), dtype=float32) and W shape: <tf.Variable 'softmax/Variable:0' shape=(512, 96) dtype=float32_ref>
+WARNING:tensorflow:From C:\Users\yichu\Documents\Projects\Deep Learning\dlproject\models\CharRNN.py:179: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+See @{tf.nn.softmax_cross_entropy_with_logits_v2}.
+2018-08-11 11:24:21.245858: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2018-08-11 11:24:21.447832: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1392] Found device 0 with properties: 
+name: Quadro M2200 major: 5 minor: 2 memoryClockRate(GHz): 1.036
+pciBusID: 0000:01:00.0
+totalMemory: 4.00GiB freeMemory: 3.33GiB
+2018-08-11 11:24:21.448336: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-11 11:24:21.837699: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-11 11:24:21.837996: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-11 11:24:21.838187: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-11 11:24:21.838466: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+INFO:tensorflow:Restoring parameters from checkpoints\i95200_l512.ckpt
+We analyze a future process\nand characteristic supercomputing the program of parato carbon and the spikes\nobtained from the conventional system. We also develop a criterion for the\nevent interviability for the problem of checking the single controlles. They are associated with an\nappropriate description of the control process.\n', 'C often the state-of-the-art on practical permittivity.\n
+In this paper, we consider the critical time scheme of pair and process structure.\n', 'Comment: To appear in Japouative Multi-Photon Mobile (CMNR).\n', 'Comment: 10 pages, 10 figures
+The performance of the proposed algorithms is proposed to predict technology. An\napplication we comment on the consistency rate allows a consideration of the applications\nof the spontaneously to combine the example of the algorithms for stochastic\nsystem and tools for the developed and constructed fragments for the\nproblems on only admission the problem of stripping optimal accordance that is\ncompletely such that, the minimum set of accuracy corresponds to each other. It to\nconstruct a network as well as an\napplication to the secret parts of the performance of this method with a class within $\\alpha$-architectures and implementation of the passive\napproach for this architecture. The calculations are selected based on two significant\ndiverse and compared cosmic rays, the proposed approach allows one\nthat these classification are applied to thousand and\nclusters. This condition close to the envelopes they close to a polynomial size. This is the second\ncondition of the problem of\ncorrelation of the sensors of convolutional neural network into an exponential\npattern to transmits its principle that arouses the performance is capable of applying and\nsurvive a sensor technique.\n
+In thist are shown, at each passive and semantic structural principle.\n', "Comment: 16 pages, 20 figures, submitted to Proceedings of the 2016 Apprearand the\nconsequences of the approximation implementation.\n", '
+(LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>), LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>))
+<tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x00000286914DB080>
+X shape: Tensor("Reshape:0", shape=(1, 512), dtype=float32) and W shape: <tf.Variable 'softmax/Variable:0' shape=(512, 96) dtype=float32_ref>
+INFO:tensorflow:Restoring parameters from checkpoints/i86000_l512.ckpt
+2018-08-11 11:24:28.192640: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-11 11:24:28.192927: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-11 11:24:28.193202: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-11 11:24:28.193389: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-11 11:24:28.193643: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+We study\nthe expected decade to the complexity of the commassical\nconcept of a certain possible single-distributed and technically reported proposal of\nthe commonly addressed state of the\napplication to such tradeoff between classification is performed for the post programming strategies as a simple method for applying a\nsecurity method to compute instations of this capture. This started application,\nwith the calculation of a performance analog through a\nmassive set of activity sequences through an efficient and classical and\ndetailed activated protocol over the strong structure of the communities of\na set-oped conference in a subject on their propagating-data. This is to study the\nentire predictions implications, which allows to develop the presence of\nsignals in partomagnetic models. In addition, we study the efficiency of clinical\nsymposium of the minimality constant to all of traditional conditional\ndata taken in order to succeader trivial technique is achievable to\ncorr
+(LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>), LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>))
+<tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x000002876F8897B8>
+X shape: Tensor("Reshape:0", shape=(1, 512), dtype=float32) and W shape: <tf.Variable 'softmax/Variable:0' shape=(512, 96) dtype=float32_ref>
+INFO:tensorflow:Restoring parameters from checkpoints/i86800_l512.ckpt
+2018-08-11 11:24:31.477705: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-11 11:24:31.477980: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-11 11:24:31.478256: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-11 11:24:31.478443: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-11 11:24:31.478700: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+In this paper, we propose a formulae for previous results in the\nformer that is characterized in the sense of preventing a novel characterize the\nperformance of to analysed over a\nclassifier in the context of three different sensor strategies, through the addition of the conventional program and their accumulator. While\ncannot be constructed that show significant corrensity of the performance.\n', 'Comment: 30 pages, 7 figures, 13 pages, 3 figures, to appear in ApJL 2016
+We propose and analyze their sensitivity to single phing\ntest challenges and to demonstrate our analysis. We finallies and the photospheric steps from cells\ncomponents.\n
+We illustrate the proposed model in the similarly predictive strategy of the\nproposed method for the cascading process are designed and also also proved. This show that the candidate preservation\nof controller constraints correspond to the acoustic capability of their sensing is\npresented by a challenging approach. To tackle thison infinite diff
