@@ -1,0 +1,103 @@
+# Hyperparameters
+batch_size = 100
+num_steps = 100
+lstm_size = 512
+num_layers = 2
+learning_rate = 0.001
+keep_prob = 0.5
+feature_size = 9
+
+C:\Users\yichu\Anaconda3\envs\tensorflow\python.exe "C:\Program Files\JetBrains\PyCharm 2018.1.4\helpers\pydev\pydevconsole.py" 52164 52165
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['C:\\Users\\yichu\\Documents\\Projects\\Deep Learning\\dlproject', 'C:/Users/yichu/Documents/Projects/Deep Learning/dlproject'])
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.3.1 -- An enhanced Interactive Python. Type '?' for help.
+PyDev console: using IPython 6.3.1
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)] on win32
+runfile('C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models/model_1_training.py', wdir='C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models')
+(LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros:0' shape=(100, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros_1:0' shape=(100, 512) dtype=float32>), LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros:0' shape=(100, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros_1:0' shape=(100, 512) dtype=float32>))
+<tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x000002803C7B3F98>
+X shape: Tensor("Reshape:0", shape=(10000, 512), dtype=float32) and W shape: <tf.Variable 'softmax/Variable:0' shape=(512, 96) dtype=float32_ref>
+WARNING:tensorflow:From C:\Users\yichu\Documents\Projects\Deep Learning\dlproject\models\CharRNN.py:157: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+See @{tf.nn.softmax_cross_entropy_with_logits_v2}.
+2018-08-10 14:33:08.177914: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2018-08-10 14:33:08.378314: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1392] Found device 0 with properties: 
+name: Quadro M2200 major: 5 minor: 2 memoryClockRate(GHz): 1.036
+pciBusID: 0000:01:00.0
+totalMemory: 4.00GiB freeMemory: 3.33GiB
+2018-08-10 14:33:08.378811: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-10 14:33:08.802340: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-10 14:33:08.802717: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-10 14:33:08.803127: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-10 14:33:08.803409: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+Epoch: 3/30 Training Steps: 500... Training loss: 1.973240613937378... 0.4229 sec/batch
+Epoch: 5/30 Training Steps: 1000... Training loss: 1.5512899160385132... 0.4348 sec/batch
+Epoch: 8/30 Training Steps: 1500... Training loss: 1.6057171821594238... 0.4289 sec/batch
+Epoch: 10/30 Training Steps: 2000... Training loss: 1.5108981132507324... 0.4260 sec/batch
+Epoch: 12/30 Training Steps: 2500... Training loss: 1.426514983177185... 0.4268 sec/batch
+Epoch: 15/30 Training Steps: 3000... Training loss: 1.4659972190856934... 0.4268 sec/batch
+Epoch: 17/30 Training Steps: 3500... Training loss: 1.3735045194625854... 0.4289 sec/batch
+Epoch: 19/30 Training Steps: 4000... Training loss: 1.4090447425842285... 0.4309 sec/batch
+Epoch: 22/30 Training Steps: 4500... Training loss: 1.322558045387268... 0.4365 sec/batch
+Epoch: 24/30 Training Steps: 5000... Training loss: 1.2902309894561768... 0.4947 sec/batch
+Epoch: 27/30 Training Steps: 5500... Training loss: 1.2488775253295898... 0.5354 sec/batch
+Epoch: 29/30 Training Steps: 6000... Training loss: 1.3038357496261597... 0.4733 sec/batch
+
+C:\Users\yichu\Anaconda3\envs\tensorflow\python.exe "C:\Program Files\JetBrains\PyCharm 2018.1.4\helpers\pydev\pydevconsole.py" 53634 53635
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['C:\\Users\\yichu\\Documents\\Projects\\Deep Learning\\dlproject', 'C:/Users/yichu/Documents/Projects/Deep Learning/dlproject'])
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.3.1 -- An enhanced Interactive Python. Type '?' for help.
+PyDev console: using IPython 6.3.1
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)] on win32
+runfile('C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models/model_1_testing.py', wdir='C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models')
+(LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>), LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>))
+<tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x000001D5226891D0>
+X shape: Tensor("Reshape:0", shape=(1, 512), dtype=float32) and W shape: <tf.Variable 'softmax/Variable:0' shape=(512, 96) dtype=float32_ref>
+WARNING:tensorflow:From C:\Users\yichu\Documents\Projects\Deep Learning\dlproject\models\CharRNN.py:157: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+See @{tf.nn.softmax_cross_entropy_with_logits_v2}.
+2018-08-10 15:31:19.064159: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2018-08-10 15:31:19.250304: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1392] Found device 0 with properties: 
+name: Quadro M2200 major: 5 minor: 2 memoryClockRate(GHz): 1.036
+pciBusID: 0000:01:00.0
+totalMemory: 4.00GiB freeMemory: 3.33GiB
+2018-08-10 15:31:19.250824: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-10 15:31:19.622172: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-10 15:31:19.622539: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-10 15:31:19.622727: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-10 15:31:19.623010: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+INFO:tensorflow:Restoring parameters from checkpoints\i6330_l512.ckpt
+83
+Werming an and computational detection of the surfect of danal\nstructured. This\ncharacterization\nalgorithms, we show that the problem of some computational different\nservices of the class of community, in the strain characteristics. We found that the\nexternal probings, and constraint of these processes\nis this paper, we identify the stationary computing of surval and the determance is solved by all\ntransition by the matrix problem where the physics in the proposed procedure is such a necessary of stacking concentrations of\ndescribing a mathematical detection at the specific structure of the dynamics. The continuum energy\ncorrespondence of the experiment on a step-level of strong structure and discover\ncompact subspaces. We derive these distributions, and in the present paper,\nwe propose a new collective detection proposed in a set of corresponding\nexponential and approximations.\n', 'Comment: 12 pages, 3 figures. Accepted by ApJ
+Simulations of strategy that is\ndiscussed on these coupled analysis is sufficiently similar to the\ncontrolled beam of deterministic sensing and their singular spin planet. In this paper\nwe describe an expressions of the precise description of the existing mixed potential times\nof the superconducting manifold is the much surface it successfully consider thin the study of the\nproblem of this set of tho construct all tested between the strategy that is their conscruping\ndecreasing community in the\nsubgroup. A perturbative concentration of self-corrected models of a particle\nstructure of the signal to the continuum choice of the protein analysis, the standard complex spin-could achieve all\ncases including the cluster, and their single cardinal parameters of achieve a nonlinear state\nof the extrapely supconding the supersymmetric concepts and\ntemperature. We demonstrate that a minimal points in the different convexity, to study the decay of temperature in several structures.\n', 'Comment: In Proceedings of Model Suppertistic C
+(LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>), LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>))
+<tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x000001D53E6ECCF8>
+X shape: Tensor("Reshape:0", shape=(1, 512), dtype=float32) and W shape: <tf.Variable 'softmax/Variable:0' shape=(512, 96) dtype=float32_ref>
+INFO:tensorflow:Restoring parameters from checkpoints/i1200_l512.ckpt
+2018-08-10 15:31:26.304479: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-10 15:31:26.304763: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-10 15:31:26.305112: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-10 15:31:26.305332: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-10 15:31:26.305563: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+15
+We. In\na realization of the potential construction algebras. The for entimulated standing the\ncan be adsting the second to temperature spoting that the property of\nand can be predictive in the existence of spectrum in a\nterperied, incroduce the coupled to signal\nsymmetric states, the set of the playmance there transiour production, to\nthe case of the consistent sigulations of potentials, and a nour conserving\ncompressive the different many algebraic. The sumplete structurt\ninfrom\nsuch the depond aloon signation in phanes, and such as invessigeted between composition of the equated\nsuperty possible stresgly improves a complements are also study it of size and the prediction for the classical comparing to all explain andly and the proposed by sumply domins full proposed by the correlated suppersion. In this calar fine the sterian expenses on the difference. In this popproaches is the\nconsistent that a resular theoretical structures for event algorithm, its is an only,\nthe\nextra
+(LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>), LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>))
+<tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x000001D6177052E8>
+X shape: Tensor("Reshape:0", shape=(1, 512), dtype=float32) and W shape: <tf.Variable 'softmax/Variable:0' shape=(512, 96) dtype=float32_ref>
+2018-08-10 15:31:29.747199: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-10 15:31:29.747555: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-10 15:31:29.747951: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-10 15:31:29.748203: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-10 15:31:29.748582: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+INFO:tensorflow:Restoring parameters from checkpoints/i1200_l512.ckpt
+72
+Ing. We such as the clisic of\na structures are presents the\nconsistential danasian. We sent hav be the proposed to actuitive a numerical contactive specific techniforms and the\ndescription of\nsimulations are complex to the comporitional tradsity. We develop structure and crattorical. The exactly assing\npropresse showtent that sharching the conservations in the extension\nof the construction in solved in the spectral time for problime in\nthe decomplex. The distribution to cansion of the spanametic frequence\nto the expected similarities of complex fully the space-of\nstringuration and the eliminary sponant tiagitation in the possibles, and compared for states. The set that strangth as the\nconcrease and phise spectram is the sumeriance are a possible processes on the decoupsion\nof alstructions of a change importing and\naltoriate on the clistical classical and\nconfine cluster from supercorror special conditions for energy consis to standed the complexs\nof sphocis allowed a confine
+

@@ -1,19 +1,20 @@
 import numpy as np
 import tensorflow as tf
-
+import os.path
+# code reference: https://github.com/NELSONZHAO/zhihu/tree/master/anna_lstm
 
 # Load data
 abstracts = []
 text = []
-with open('../data/20177abstract.txt', 'r') as f:
+with open('../data/2017abstract.txt', 'r') as f:
     abstracts = f.readlines()
-with open('../data/20177abstract.txt', 'r') as f:
+with open('../data/2017abstract.txt', 'r') as f:
     text = f.read()
 vocab = sorted(set(text))
 vocab_to_int = {c: i for i, c in enumerate(vocab)}
 int_to_vocab = dict(enumerate(vocab))
 
-subs = np.loadtxt('../data/20177subject.txt')
+subs = np.loadtxt('../data/2017subject.txt')
 
 data = []
 for i in range(len(abstracts)):
@@ -24,12 +25,20 @@ for i in range(len(abstracts)):
         encodedWithSub.append(np.append(encoded[j], subs[i]))
     data.append(encodedWithSub)
 
-merged_data = []
-for sublist in data:
-    for item in sublist:
-        merged_data.append(item)
 
-merged_data_matrix = np.array(merged_data)
+merged_file_exist = os.path.isfile('../data/mergeddata2017.txt')
+if not merged_file_exist:
+    print("file not exist")
+    merged_data = []
+    for sublist in data:
+        for item in sublist:
+            merged_data.append(item)
+
+    merged_data_matrix = np.array(merged_data)
+    np.savetxt("../data/mergeddata2017.txt",merged_data_matrix,fmt='%i')
+else:
+    print("file exists")
+    merged_data_matrix = np.loadtxt("../data/mergeddata2017.txt", dtype=np.int32)
 
 text[:100]
 

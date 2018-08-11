@@ -62,7 +62,6 @@ def sample(checkpoint, n_samples, lstm_size, vocab_size, prime="We", subject=[0,
 
         c = pick_top_n(preds, len(CharRNN.vocab))
         # add new predictions to the sampling
-        print(c)
         samples.append(CharRNN.int_to_vocab[c])
 
         # generate new chars till the limit
