@@ -25,8 +25,6 @@ def pick_top_n(preds, vocab_size, top_n=5):
     return c
 
 
-# In[19]:
-
 def sample(checkpoint, n_samples, lstm_size, vocab_size, prime="We", subject=[0,0,0,0,0,0,0,0]):
     """
     Sampling new text
@@ -83,12 +81,9 @@ def sample(checkpoint, n_samples, lstm_size, vocab_size, prime="We", subject=[0,
 
 # Here, pass in the path to a checkpoint and sample from the network.
 
-# In[20]:
 
-tf.train.latest_checkpoint('checkpoints')
 
 lstm_size = 512
-# In[26]:
 # 'Physics', 'Mathematics', 'Computer Science', 'Quantitative Biology', 'Quantitative Finance', 'Statistics', 'Electrical Engineering and Systems Science', 'Economics'
 
 #
@@ -96,13 +91,11 @@ checkpoint = tf.train.latest_checkpoint('checkpoints')
 samp = sample(checkpoint, 2000, lstm_size, len(CharRNN.vocab), prime="We", subject=[0,0,1,0,0,0,0,0])
 print(samp)
 
-# In[22]:
 
 checkpoint = 'checkpoints/i1200_l512.ckpt'
 samp = sample(checkpoint, 1000, lstm_size, len(CharRNN.vocab), prime="We", subject=[0,0,1,0,0,0,0,0])
 print(samp)
 
-# In[23]:
 
 checkpoint = 'checkpoints/i1200_l512.ckpt'
 samp = sample(checkpoint, 1000, lstm_size, len(CharRNN.vocab), prime="In", subject=[0,0,1,0,0,0,0,0])
