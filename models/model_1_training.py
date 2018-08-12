@@ -14,7 +14,7 @@ feature_size = 9
 
 epochs = 20
 
-save_every_n = 400
+save_every_n = 500
 
 model = CharRNN.CharRNN(len(CharRNN.vocab), batch_size=batch_size, num_steps=num_steps, lstm_size=lstm_size, num_layers=num_layers,
                         learning_rate=learning_rate, feature_size=feature_size)

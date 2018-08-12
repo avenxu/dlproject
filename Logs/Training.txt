@@ -1,0 +1,238 @@
+C:\Users\yichu\Anaconda3\envs\tensorflow\python.exe "C:\Program Files\JetBrains\PyCharm 2018.1.4\helpers\pydev\pydevconsole.py" 56442 56443
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['C:\\Users\\yichu\\Documents\\Projects\\Deep Learning\\dlproject', 'C:/Users/yichu/Documents/Projects/Deep Learning/dlproject'])
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.3.1 -- An enhanced Interactive Python. Type '?' for help.
+PyDev console: using IPython 6.3.1
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)] on win32
+runfile('C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models/model_1_training.py', wdir='C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models')
+file exists
+(LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros:0' shape=(100, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros_1:0' shape=(100, 512) dtype=float32>), LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros:0' shape=(100, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros_1:0' shape=(100, 512) dtype=float32>))
+<tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x000001ED1E6BE0B8>
+X shape: Tensor("Reshape:0", shape=(10000, 512), dtype=float32) and W shape: <tf.Variable 'softmax/Variable:0' shape=(512, 96) dtype=float32_ref>
+WARNING:tensorflow:From C:\Users\yichu\Documents\Projects\Deep Learning\dlproject\models\CharRNN.py:166: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+See @{tf.nn.softmax_cross_entropy_with_logits_v2}.
+2018-08-11 12:58:45.821749: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2018-08-11 12:58:46.019387: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1392] Found device 0 with properties: 
+name: Quadro M2200 major: 5 minor: 2 memoryClockRate(GHz): 1.036
+pciBusID: 0000:01:00.0
+totalMemory: 4.00GiB freeMemory: 3.33GiB
+2018-08-11 12:58:46.019850: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-08-11 12:58:46.382990: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-11 12:58:46.383276: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0 
+2018-08-11 12:58:46.383460: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N 
+2018-08-11 12:58:46.383726: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3054 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+Epoch: 1/20 Training Steps: 500... Training loss: 2.1921005249023438... 0.4324 sec/batch
+Epoch: 1/20 Training Steps: 1000... Training loss: 1.7134379148483276... 0.4674 sec/batch
+Epoch: 1/20 Training Steps: 1500... Training loss: 1.603501796722412... 0.4637 sec/batch
+Epoch: 1/20 Training Steps: 2000... Training loss: 1.5917366743087769... 0.4689 sec/batch
+Epoch: 1/20 Training Steps: 2500... Training loss: 1.4020832777023315... 0.4709 sec/batch
+Epoch: 1/20 Training Steps: 3000... Training loss: 1.4124345779418945... 0.4881 sec/batch
+Epoch: 1/20 Training Steps: 3500... Training loss: 1.3757294416427612... 0.4686 sec/batch
+Epoch: 1/20 Training Steps: 4000... Training loss: 1.3294756412506104... 0.4686 sec/batch
+Epoch: 1/20 Training Steps: 4500... Training loss: 1.3559167385101318... 0.4686 sec/batch
+Epoch: 1/20 Training Steps: 5000... Training loss: 1.3681632280349731... 0.4735 sec/batch
+Epoch: 2/20 Training Steps: 5500... Training loss: 1.334243893623352... 0.4674 sec/batch
+Epoch: 2/20 Training Steps: 6000... Training loss: 1.2613396644592285... 0.4686 sec/batch
+Epoch: 2/20 Training Steps: 6500... Training loss: 1.2910408973693848... 0.4548 sec/batch
+Epoch: 2/20 Training Steps: 7000... Training loss: 1.3490324020385742... 0.4592 sec/batch
+Epoch: 2/20 Training Steps: 7500... Training loss: 1.3173953294754028... 0.4686 sec/batch
+Epoch: 2/20 Training Steps: 8000... Training loss: 1.33030104637146... 0.4769 sec/batch
+Epoch: 2/20 Training Steps: 8500... Training loss: 1.2850421667099... 0.4470 sec/batch
+Epoch: 2/20 Training Steps: 9000... Training loss: 1.4089480638504028... 0.4775 sec/batch
+Epoch: 2/20 Training Steps: 9500... Training loss: 1.2509949207305908... 0.4842 sec/batch
+Epoch: 2/20 Training Steps: 10000... Training loss: 1.3624480962753296... 0.4687 sec/batch
+Epoch: 2/20 Training Steps: 10500... Training loss: 1.273141622543335... 0.4795 sec/batch
+Epoch: 3/20 Training Steps: 11000... Training loss: 1.3091800212860107... 0.4737 sec/batch
+Epoch: 3/20 Training Steps: 11500... Training loss: 1.2804031372070312... 0.4649 sec/batch
+Epoch: 3/20 Training Steps: 12000... Training loss: 1.2425035238265991... 0.4623 sec/batch
+Epoch: 3/20 Training Steps: 12500... Training loss: 1.386228322982788... 0.4740 sec/batch
+Epoch: 3/20 Training Steps: 13000... Training loss: 1.327937364578247... 0.4530 sec/batch
+Epoch: 3/20 Training Steps: 13500... Training loss: 1.2808364629745483... 0.4530 sec/batch
+Epoch: 3/20 Training Steps: 14000... Training loss: 1.2312376499176025... 0.4585 sec/batch
+Epoch: 3/20 Training Steps: 14500... Training loss: 1.3290122747421265... 0.4530 sec/batch
+Epoch: 3/20 Training Steps: 15000... Training loss: 1.2863340377807617... 0.4659 sec/batch
+Epoch: 3/20 Training Steps: 15500... Training loss: 1.2255382537841797... 0.4686 sec/batch
+Epoch: 4/20 Training Steps: 16000... Training loss: 1.358148455619812... 0.4790 sec/batch
+Epoch: 4/20 Training Steps: 16500... Training loss: 1.2872062921524048... 0.4665 sec/batch
+Epoch: 4/20 Training Steps: 17000... Training loss: 1.2641414403915405... 0.4687 sec/batch
+Epoch: 4/20 Training Steps: 17500... Training loss: 1.2863874435424805... 0.4711 sec/batch
+Epoch: 4/20 Training Steps: 18000... Training loss: 1.2608907222747803... 0.4746 sec/batch
+Epoch: 4/20 Training Steps: 18500... Training loss: 1.2105501890182495... 0.4470 sec/batch
+Epoch: 4/20 Training Steps: 19000... Training loss: 1.2385773658752441... 0.4572 sec/batch
+Epoch: 4/20 Training Steps: 19500... Training loss: 1.2644174098968506... 0.4687 sec/batch
+Epoch: 4/20 Training Steps: 20000... Training loss: 1.2298004627227783... 0.4691 sec/batch
+Epoch: 4/20 Training Steps: 20500... Training loss: 1.2259349822998047... 0.4707 sec/batch
+Epoch: 4/20 Training Steps: 21000... Training loss: 1.2279603481292725... 0.4702 sec/batch
+Epoch: 5/20 Training Steps: 21500... Training loss: 1.2129557132720947... 0.4625 sec/batch
+Epoch: 5/20 Training Steps: 22000... Training loss: 1.2050702571868896... 0.4647 sec/batch
+Epoch: 5/20 Training Steps: 22500... Training loss: 1.2012215852737427... 0.4696 sec/batch
+Epoch: 5/20 Training Steps: 23000... Training loss: 1.1878905296325684... 0.4686 sec/batch
+Epoch: 5/20 Training Steps: 23500... Training loss: 1.2405587434768677... 0.4870 sec/batch
+Epoch: 5/20 Training Steps: 24000... Training loss: 1.229560375213623... 0.4783 sec/batch
+Epoch: 5/20 Training Steps: 24500... Training loss: 1.1661598682403564... 0.4686 sec/batch
+Epoch: 5/20 Training Steps: 25000... Training loss: 1.1908663511276245... 0.4686 sec/batch
+Epoch: 5/20 Training Steps: 25500... Training loss: 1.1943457126617432... 0.4686 sec/batch
+Epoch: 5/20 Training Steps: 26000... Training loss: 1.2653416395187378... 0.4746 sec/batch
+Epoch: 6/20 Training Steps: 26500... Training loss: 1.2171114683151245... 0.4724 sec/batch
+Epoch: 6/20 Training Steps: 27000... Training loss: 1.2576262950897217... 0.4697 sec/batch
+Epoch: 6/20 Training Steps: 27500... Training loss: 1.2418216466903687... 0.4770 sec/batch
+Epoch: 6/20 Training Steps: 28000... Training loss: 1.2935974597930908... 0.4842 sec/batch
+Epoch: 6/20 Training Steps: 28500... Training loss: 1.2539528608322144... 0.4687 sec/batch
+Epoch: 6/20 Training Steps: 29000... Training loss: 1.1991513967514038... 0.4707 sec/batch
+Epoch: 6/20 Training Steps: 29500... Training loss: 1.2822884321212769... 0.4544 sec/batch
+Epoch: 6/20 Training Steps: 30000... Training loss: 1.2221606969833374... 0.4650 sec/batch
+Epoch: 6/20 Training Steps: 30500... Training loss: 1.1944384574890137... 0.4702 sec/batch
+Epoch: 6/20 Training Steps: 31000... Training loss: 1.2132415771484375... 0.4615 sec/batch
+Epoch: 6/20 Training Steps: 31500... Training loss: 1.290015459060669... 0.4687 sec/batch
+Epoch: 7/20 Training Steps: 32000... Training loss: 1.180882215499878... 0.4629 sec/batch
+Epoch: 7/20 Training Steps: 32500... Training loss: 1.2202891111373901... 0.4633 sec/batch
+Epoch: 7/20 Training Steps: 33000... Training loss: 1.2654104232788086... 0.4687 sec/batch
+Epoch: 7/20 Training Steps: 33500... Training loss: 1.2640193700790405... 0.4711 sec/batch
+Epoch: 7/20 Training Steps: 34000... Training loss: 1.2650222778320312... 0.4697 sec/batch
+Epoch: 7/20 Training Steps: 34500... Training loss: 1.1989452838897705... 0.4677 sec/batch
+Epoch: 7/20 Training Steps: 35000... Training loss: 1.244624376296997... 0.4774 sec/batch
+Epoch: 7/20 Training Steps: 35500... Training loss: 1.2352772951126099... 0.4687 sec/batch
+Epoch: 7/20 Training Steps: 36000... Training loss: 1.2399122714996338... 0.4686 sec/batch
+Epoch: 7/20 Training Steps: 36500... Training loss: 1.1832133531570435... 0.4543 sec/batch
+Epoch: 8/20 Training Steps: 37000... Training loss: 1.2688984870910645... 0.4530 sec/batch
+Epoch: 8/20 Training Steps: 37500... Training loss: 1.2797881364822388... 0.4686 sec/batch
+Epoch: 8/20 Training Steps: 38000... Training loss: 1.2079784870147705... 0.4773 sec/batch
+Epoch: 8/20 Training Steps: 38500... Training loss: 1.1852872371673584... 0.4574 sec/batch
+Epoch: 8/20 Training Steps: 39000... Training loss: 1.2820810079574585... 0.4530 sec/batch
+Epoch: 8/20 Training Steps: 39500... Training loss: 1.1563998460769653... 0.4699 sec/batch
+Epoch: 8/20 Training Steps: 40000... Training loss: 1.3034473657608032... 0.4686 sec/batch
+Epoch: 8/20 Training Steps: 40500... Training loss: 1.265729308128357... 0.4610 sec/batch
+Epoch: 8/20 Training Steps: 41000... Training loss: 1.240829348564148... 0.4769 sec/batch
+Epoch: 8/20 Training Steps: 41500... Training loss: 1.1660321950912476... 0.4687 sec/batch
+Epoch: 8/20 Training Steps: 42000... Training loss: 1.2136123180389404... 0.4842 sec/batch
+Epoch: 9/20 Training Steps: 42500... Training loss: 1.2882180213928223... 0.4686 sec/batch
+Epoch: 9/20 Training Steps: 43000... Training loss: 1.1775968074798584... 0.4743 sec/batch
+Epoch: 9/20 Training Steps: 43500... Training loss: 1.1535884141921997... 0.4816 sec/batch
+Epoch: 9/20 Training Steps: 44000... Training loss: 1.1675447225570679... 0.4812 sec/batch
+Epoch: 9/20 Training Steps: 44500... Training loss: 1.1482919454574585... 0.4842 sec/batch
+Epoch: 9/20 Training Steps: 45000... Training loss: 1.2192504405975342... 0.4642 sec/batch
+Epoch: 9/20 Training Steps: 45500... Training loss: 1.1656886339187622... 0.4707 sec/batch
+Epoch: 9/20 Training Steps: 46000... Training loss: 1.1882057189941406... 0.4722 sec/batch
+Epoch: 9/20 Training Steps: 46500... Training loss: 1.1320712566375732... 0.4852 sec/batch
+Epoch: 9/20 Training Steps: 47000... Training loss: 1.2566927671432495... 0.4712 sec/batch
+Epoch: 10/20 Training Steps: 47500... Training loss: 1.30855131149292... 0.4686 sec/batch
+Epoch: 10/20 Training Steps: 48000... Training loss: 1.211493730545044... 0.4812 sec/batch
+Epoch: 10/20 Training Steps: 48500... Training loss: 1.2789031267166138... 0.4686 sec/batch
+Epoch: 10/20 Training Steps: 49000... Training loss: 1.166873574256897... 0.4686 sec/batch
+Epoch: 10/20 Training Steps: 49500... Training loss: 1.1728848218917847... 0.4686 sec/batch
+Epoch: 10/20 Training Steps: 50000... Training loss: 1.2322536706924438... 0.4731 sec/batch
+Epoch: 10/20 Training Steps: 50500... Training loss: 1.1893802881240845... 0.4660 sec/batch
+Epoch: 10/20 Training Steps: 51000... Training loss: 1.1972805261611938... 0.4537 sec/batch
+Epoch: 10/20 Training Steps: 51500... Training loss: 1.2578164339065552... 0.4686 sec/batch
+Epoch: 10/20 Training Steps: 52000... Training loss: 1.3058279752731323... 0.4615 sec/batch
+Epoch: 10/20 Training Steps: 52500... Training loss: 1.1914008855819702... 0.4530 sec/batch
+Epoch: 11/20 Training Steps: 53000... Training loss: 1.1605629920959473... 0.4687 sec/batch
+Epoch: 11/20 Training Steps: 53500... Training loss: 1.214983344078064... 0.4686 sec/batch
+Epoch: 11/20 Training Steps: 54000... Training loss: 1.2228502035140991... 0.4790 sec/batch
+Epoch: 11/20 Training Steps: 54500... Training loss: 1.1959023475646973... 0.4754 sec/batch
+Epoch: 11/20 Training Steps: 55000... Training loss: 1.240053653717041... 0.4723 sec/batch
+Epoch: 11/20 Training Steps: 55500... Training loss: 1.2504059076309204... 0.4685 sec/batch
+Epoch: 11/20 Training Steps: 56000... Training loss: 1.1598429679870605... 0.4530 sec/batch
+Epoch: 11/20 Training Steps: 56500... Training loss: 1.1301696300506592... 0.4843 sec/batch
+Epoch: 11/20 Training Steps: 57000... Training loss: 1.2980197668075562... 0.4771 sec/batch
+Epoch: 11/20 Training Steps: 57500... Training loss: 1.165021538734436... 0.4658 sec/batch
+Epoch: 11/20 Training Steps: 58000... Training loss: 1.1593974828720093... 0.4661 sec/batch
+Epoch: 12/20 Training Steps: 58500... Training loss: 1.1917319297790527... 0.4530 sec/batch
+Epoch: 12/20 Training Steps: 59000... Training loss: 1.1468309164047241... 0.4552 sec/batch
+Epoch: 12/20 Training Steps: 59500... Training loss: 1.1635688543319702... 0.4686 sec/batch
+Epoch: 12/20 Training Steps: 60000... Training loss: 1.2113943099975586... 0.4686 sec/batch
+Epoch: 12/20 Training Steps: 60500... Training loss: 1.139374852180481... 0.4686 sec/batch
+Epoch: 12/20 Training Steps: 61000... Training loss: 1.129225254058838... 0.4575 sec/batch
+Epoch: 12/20 Training Steps: 61500... Training loss: 1.222916603088379... 0.4686 sec/batch
+Epoch: 12/20 Training Steps: 62000... Training loss: 1.1718801259994507... 0.4661 sec/batch
+Epoch: 12/20 Training Steps: 62500... Training loss: 1.1895393133163452... 0.4716 sec/batch
+Epoch: 12/20 Training Steps: 63000... Training loss: 1.15738046169281... 0.4686 sec/batch
+Epoch: 13/20 Training Steps: 63500... Training loss: 1.2060879468917847... 0.4686 sec/batch
+Epoch: 13/20 Training Steps: 64000... Training loss: 1.1751062870025635... 0.4686 sec/batch
+Epoch: 13/20 Training Steps: 64500... Training loss: 1.207865595817566... 0.4686 sec/batch
+Epoch: 13/20 Training Steps: 65000... Training loss: 1.2681838274002075... 0.4740 sec/batch
+Epoch: 13/20 Training Steps: 65500... Training loss: 1.1845186948776245... 0.4530 sec/batch
+Epoch: 13/20 Training Steps: 66000... Training loss: 1.2368812561035156... 0.4687 sec/batch
+Epoch: 13/20 Training Steps: 66500... Training loss: 1.2115789651870728... 0.4685 sec/batch
+Epoch: 13/20 Training Steps: 67000... Training loss: 1.1608681678771973... 0.4686 sec/batch
+Epoch: 13/20 Training Steps: 67500... Training loss: 1.1370937824249268... 0.4686 sec/batch
+Epoch: 13/20 Training Steps: 68000... Training loss: 1.225049614906311... 0.4726 sec/batch
+Epoch: 13/20 Training Steps: 68500... Training loss: 1.1214935779571533... 0.4686 sec/batch
+Epoch: 14/20 Training Steps: 69000... Training loss: 1.206686019897461... 0.4646 sec/batch
+Epoch: 14/20 Training Steps: 69500... Training loss: 1.276336669921875... 0.4686 sec/batch
+Epoch: 14/20 Training Steps: 70000... Training loss: 1.1703674793243408... 0.4654 sec/batch
+Epoch: 14/20 Training Steps: 70500... Training loss: 1.185960054397583... 0.4565 sec/batch
+Epoch: 14/20 Training Steps: 71000... Training loss: 1.2231712341308594... 0.4687 sec/batch
+Epoch: 14/20 Training Steps: 71500... Training loss: 1.187701940536499... 0.4702 sec/batch
+Epoch: 14/20 Training Steps: 72000... Training loss: 1.2617971897125244... 0.4595 sec/batch
+Epoch: 14/20 Training Steps: 72500... Training loss: 1.1345621347427368... 0.4648 sec/batch
+Epoch: 14/20 Training Steps: 73000... Training loss: 1.2027019262313843... 0.4686 sec/batch
+Epoch: 14/20 Training Steps: 73500... Training loss: 1.1985865831375122... 0.4829 sec/batch
+Epoch: 15/20 Training Steps: 74000... Training loss: 1.1520726680755615... 0.4686 sec/batch
+Epoch: 15/20 Training Steps: 74500... Training loss: 1.2430291175842285... 0.4741 sec/batch
+Epoch: 15/20 Training Steps: 75000... Training loss: 1.2273069620132446... 0.4503 sec/batch
+Epoch: 15/20 Training Steps: 75500... Training loss: 1.2074978351593018... 0.4686 sec/batch
+Epoch: 15/20 Training Steps: 76000... Training loss: 1.2304474115371704... 0.4660 sec/batch
+Epoch: 15/20 Training Steps: 76500... Training loss: 1.1929144859313965... 0.4714 sec/batch
+Epoch: 15/20 Training Steps: 77000... Training loss: 1.2095561027526855... 0.4686 sec/batch
+Epoch: 15/20 Training Steps: 77500... Training loss: 1.2232292890548706... 0.4686 sec/batch
+Epoch: 15/20 Training Steps: 78000... Training loss: 1.1213176250457764... 0.4529 sec/batch
+Epoch: 15/20 Training Steps: 78500... Training loss: 1.2222980260849... 0.4530 sec/batch
+Epoch: 15/20 Training Steps: 79000... Training loss: 1.1532330513000488... 0.4640 sec/batch
+Epoch: 16/20 Training Steps: 79500... Training loss: 1.1454176902770996... 0.4706 sec/batch
+Epoch: 16/20 Training Steps: 80000... Training loss: 1.168311357498169... 0.4554 sec/batch
+Epoch: 16/20 Training Steps: 80500... Training loss: 1.120187759399414... 0.4686 sec/batch
+Epoch: 16/20 Training Steps: 81000... Training loss: 1.2373154163360596... 0.4530 sec/batch
+Epoch: 16/20 Training Steps: 81500... Training loss: 1.2033319473266602... 0.4662 sec/batch
+Epoch: 16/20 Training Steps: 82000... Training loss: 1.1509541273117065... 0.4536 sec/batch
+Epoch: 16/20 Training Steps: 82500... Training loss: 1.1837966442108154... 0.4686 sec/batch
+Epoch: 16/20 Training Steps: 83000... Training loss: 1.1127705574035645... 0.4546 sec/batch
+Epoch: 16/20 Training Steps: 83500... Training loss: 1.2063287496566772... 0.4686 sec/batch
+Epoch: 16/20 Training Steps: 84000... Training loss: 1.161417007446289... 0.4712 sec/batch
+Epoch: 17/20 Training Steps: 84500... Training loss: 1.17170250415802... 0.4735 sec/batch
+Epoch: 17/20 Training Steps: 85000... Training loss: 1.197279930114746... 0.4686 sec/batch
+Epoch: 17/20 Training Steps: 85500... Training loss: 1.217745304107666... 0.4668 sec/batch
+Epoch: 17/20 Training Steps: 86000... Training loss: 1.2082353830337524... 0.4686 sec/batch
+Epoch: 17/20 Training Steps: 86500... Training loss: 1.1255161762237549... 0.4843 sec/batch
+Epoch: 17/20 Training Steps: 87000... Training loss: 1.1655826568603516... 0.4660 sec/batch
+Epoch: 17/20 Training Steps: 87500... Training loss: 1.2127056121826172... 0.4645 sec/batch
+Epoch: 17/20 Training Steps: 88000... Training loss: 1.1645196676254272... 0.4688 sec/batch
+Epoch: 17/20 Training Steps: 88500... Training loss: 1.1399868726730347... 0.4754 sec/batch
+Epoch: 17/20 Training Steps: 89000... Training loss: 1.2282072305679321... 0.4737 sec/batch
+Epoch: 17/20 Training Steps: 89500... Training loss: 1.2452729940414429... 0.4695 sec/batch
+Epoch: 18/20 Training Steps: 90000... Training loss: 1.1157737970352173... 0.4727 sec/batch
+Epoch: 18/20 Training Steps: 90500... Training loss: 1.1979824304580688... 0.4561 sec/batch
+Epoch: 18/20 Training Steps: 91000... Training loss: 1.1389589309692383... 0.4634 sec/batch
+Epoch: 18/20 Training Steps: 91500... Training loss: 1.1628491878509521... 0.4686 sec/batch
+Epoch: 18/20 Training Steps: 92000... Training loss: 1.153751254081726... 0.4840 sec/batch
+Epoch: 18/20 Training Steps: 92500... Training loss: 1.1196390390396118... 0.4659 sec/batch
+Epoch: 18/20 Training Steps: 93000... Training loss: 1.195652723312378... 0.4686 sec/batch
+Epoch: 18/20 Training Steps: 93500... Training loss: 1.2080458402633667... 0.4687 sec/batch
+Epoch: 18/20 Training Steps: 94000... Training loss: 1.2111409902572632... 0.4643 sec/batch
+Epoch: 18/20 Training Steps: 94500... Training loss: 1.1903516054153442... 0.4686 sec/batch
+Epoch: 19/20 Training Steps: 95000... Training loss: 1.1793447732925415... 0.4686 sec/batch
+Epoch: 19/20 Training Steps: 95500... Training loss: 1.1421425342559814... 0.4569 sec/batch
+Epoch: 19/20 Training Steps: 96000... Training loss: 1.1958097219467163... 0.4611 sec/batch
+Epoch: 19/20 Training Steps: 96500... Training loss: 1.1016119718551636... 0.4687 sec/batch
+Epoch: 19/20 Training Steps: 97000... Training loss: 1.0860732793807983... 0.4687 sec/batch
+Epoch: 19/20 Training Steps: 97500... Training loss: 1.2158994674682617... 0.4686 sec/batch
+Epoch: 19/20 Training Steps: 98000... Training loss: 1.234309196472168... 0.4664 sec/batch
+Epoch: 19/20 Training Steps: 98500... Training loss: 1.1148236989974976... 0.4601 sec/batch
+Epoch: 19/20 Training Steps: 99000... Training loss: 1.2079051733016968... 0.4631 sec/batch
+Epoch: 19/20 Training Steps: 99500... Training loss: 1.1585017442703247... 0.4632 sec/batch
+Epoch: 19/20 Training Steps: 100000... Training loss: 1.1496200561523438... 0.4693 sec/batch
+Epoch: 20/20 Training Steps: 100500... Training loss: 1.1370004415512085... 0.4687 sec/batch
+Epoch: 20/20 Training Steps: 101000... Training loss: 1.1238887310028076... 0.4686 sec/batch
+Epoch: 20/20 Training Steps: 101500... Training loss: 1.1620107889175415... 0.4800 sec/batch
+Epoch: 20/20 Training Steps: 102000... Training loss: 1.0754191875457764... 0.4621 sec/batch
+Epoch: 20/20 Training Steps: 102500... Training loss: 1.1395126581192017... 0.4707 sec/batch
+Epoch: 20/20 Training Steps: 103000... Training loss: 1.166927695274353... 0.4530 sec/batch
+Epoch: 20/20 Training Steps: 103500... Training loss: 1.2091186046600342... 0.4636 sec/batch
+Epoch: 20/20 Training Steps: 104000... Training loss: 1.1167900562286377... 0.4616 sec/batch
+Epoch: 20/20 Training Steps: 104500... Training loss: 1.199904441833496... 0.4753 sec/batch
+Epoch: 20/20 Training Steps: 105000... Training loss: 1.155475378036499... 0.4689 sec/batch
