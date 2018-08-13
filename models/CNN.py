@@ -10,7 +10,15 @@ K.tensorflow_backend._get_available_gpus()
 
 
 print('Loading data')
-x, y, vocab_to_int, int_to_vocab = load_data(seq_size = 20)
+embedding_dim = 96
+filter_sizes = [3,4,5]
+num_filters = 512
+drop = 0.5
+
+epochs = 2
+batch_size = 100
+seq_size = 100
+x, y, vocab_to_int, int_to_vocab = load_data(seq_size)
 
 # x.shape -> (10662, 56)
 # y.shape -> (10662, 2)
@@ -26,13 +34,7 @@ x, y, vocab_to_int, int_to_vocab = load_data(seq_size = 20)
 
 sequence_length = x.shape[1] #100
 vocabulary_size = len(int_to_vocab) # 96
-embedding_dim = 96
-filter_sizes = [3,4,5]
-num_filters = 512
-drop = 0.5
 
-epochs = 2
-batch_size = 30
 
 # this returns a tensor
 print("Creating Model...")
@@ -40,9 +42,9 @@ inputs = Input(shape=(sequence_length,), dtype='int32')
 embedding = Embedding(input_dim=vocabulary_size, output_dim=embedding_dim, input_length=sequence_length)(inputs)
 reshape = Reshape((sequence_length,embedding_dim,1))(embedding)
 
-conv_0 = Conv2D(num_filters, kernel_size=(filter_sizes[0], embedding_dim), padding='valid', kernel_initializer='normal', activation='relu')(reshape)
-conv_1 = Conv2D(num_filters, kernel_size=(filter_sizes[1], embedding_dim), padding='valid', kernel_initializer='normal', activation='relu')(reshape)
-conv_2 = Conv2D(num_filters, kernel_size=(filter_sizes[2], embedding_dim), padding='valid', kernel_initializer='normal', activation='relu')(reshape)
+conv_0 = Conv2D(num_filters, kernel_size=(filter_sizes[0], embedding_dim), padding='valid', dilation_rate=1, kernel_initializer='normal', activation='relu')(reshape)
+conv_1 = Conv2D(num_filters, kernel_size=(filter_sizes[1], embedding_dim), padding='valid', dilation_rate=1, kernel_initializer='normal', activation='relu')(reshape)
+conv_2 = Conv2D(num_filters, kernel_size=(filter_sizes[2], embedding_dim), padding='valid', dilation_rate=1, kernel_initializer='normal', activation='relu')(reshape)
 
 maxpool_0 = MaxPool2D(pool_size=(sequence_length - filter_sizes[0] + 1, 1), strides=(1,1), padding='valid')(conv_0)
 maxpool_1 = MaxPool2D(pool_size=(sequence_length - filter_sizes[1] + 1, 1), strides=(1,1), padding='valid')(conv_1)
@@ -76,6 +78,6 @@ for n in range(100):
     prediction.append(c)
 
 result = ''.join(prediction)
-
-np.savetxt("../Logs/CNNPrediction.txt", result)
-print(result)
+text_file = open("../Logs/CNNPrediction.txt", "w")
+text_file.write(result)
+text_file.close()
