@@ -89,7 +89,7 @@ def build_vocab(sentences):
     Returns vocabulary mapping and inverse vocabulary mapping.
     """
     # Build vocabulary
-    text = list(open("../data/201777abstract.txt", "r", encoding='latin-1').read())
+    text = list(open("../data/2017777abstract.txt", "r", encoding='latin-1').read())
 
     vocab = sorted(set(text))
 
