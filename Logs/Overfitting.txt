@@ -1,0 +1,84 @@
+C:\Users\yichu\Anaconda3\envs\tensorflow\python.exe "C:\Program Files\JetBrains\PyCharm 2018.1.4\helpers\pydev\pydevconsole.py" 55038 55039
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['C:\\Users\\yichu\\Documents\\Projects\\Deep Learning\\dlproject', 'C:/Users/yichu/Documents/Projects/Deep Learning/dlproject'])
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.3.1 -- An enhanced Interactive Python. Type '?' for help.
+PyDev console: using IPython 6.3.1
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)] on win32
+runfile('C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models/model_1_training.py', wdir='C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models')
+File exists
+Loading file
+File loaded
+(LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros:0' shape=(10, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros_1:0' shape=(10, 512) dtype=float32>), LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros:0' shape=(10, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros_1:0' shape=(10, 512) dtype=float32>))
+<tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x0000021A565A4C50>
+X shape: Tensor("Reshape:0", shape=(1000, 512), dtype=float32) and W shape: <tf.Variable 'softmax/Variable:0' shape=(512, 63) dtype=float32_ref>
+WARNING:tensorflow:From C:\Users\yichu\Documents\Projects\Deep Learning\dlproject\models\CharRNN.py:168: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+See @{tf.nn.softmax_cross_entropy_with_logits_v2}.
+2018-08-14 10:10:46.170655: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2018-08-14 10:10:46.488590: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1405] Found device 0 with properties: 
+name: Quadro M2200 major: 5 minor: 2 memoryClockRate(GHz): 1.036
+pciBusID: 0000:01:00.0
+totalMemory: 4.00GiB freeMemory: 3.33GiB
+2018-08-14 10:10:46.489464: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-08-14 10:10:47.151005: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-14 10:10:47.151654: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971]      0 
+2018-08-14 10:10:47.152150: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:984] 0:   N 
+2018-08-14 10:10:47.152655: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3048 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+Epoch: 100/1000 Training Steps: 500... Training loss: 0.5178292393684387... 0.2822 sec/batch
+Epoch: 200/1000 Training Steps: 1000... Training loss: 0.025882380083203316... 0.2852 sec/batch
+Epoch: 300/1000 Training Steps: 1500... Training loss: 0.01403479278087616... 0.2912 sec/batch
+Epoch: 400/1000 Training Steps: 2000... Training loss: 0.00744756031781435... 0.3151 sec/batch
+Epoch: 500/1000 Training Steps: 2500... Training loss: 0.00223161606118083... 0.2822 sec/batch
+Epoch: 600/1000 Training Steps: 3000... Training loss: 0.0016092781443148851... 0.2852 sec/batch
+Epoch: 700/1000 Training Steps: 3500... Training loss: 0.1081445962190628... 0.2982 sec/batch
+Epoch: 800/1000 Training Steps: 4000... Training loss: 0.0010439817560836673... 0.3521 sec/batch
+Epoch: 900/1000 Training Steps: 4500... Training loss: 0.0007960423245094717... 0.3092 sec/batch
+Epoch: 1000/1000 Training Steps: 5000... Training loss: 0.00538060674443841... 0.3152 sec/batch
+
+C:\Users\yichu\Anaconda3\envs\tensorflow\python.exe "C:\Program Files\JetBrains\PyCharm 2018.1.4\helpers\pydev\pydevconsole.py" 57613 57614
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['C:\\Users\\yichu\\Documents\\Projects\\Deep Learning\\dlproject', 'C:/Users/yichu/Documents/Projects/Deep Learning/dlproject'])
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.3.1 -- An enhanced Interactive Python. Type '?' for help.
+PyDev console: using IPython 6.3.1
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)] on win32
+runfile('C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models/model_1_testing.py', wdir='C:/Users/yichu/Documents/Projects/Deep Learning/dlproject/models')
+File exists
+Loading file
+File loaded
+(LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>), LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>))
+<tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x000001675E6595F8>
+X shape: Tensor("Reshape:0", shape=(1, 512), dtype=float32) and W shape: <tf.Variable 'softmax/Variable:0' shape=(512, 63) dtype=float32_ref>
+WARNING:tensorflow:From C:\Users\yichu\Documents\Projects\Deep Learning\dlproject\models\CharRNN.py:168: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+See @{tf.nn.softmax_cross_entropy_with_logits_v2}.
+2018-08-14 12:00:32.372416: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2018-08-14 12:00:32.567525: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1405] Found device 0 with properties: 
+name: Quadro M2200 major: 5 minor: 2 memoryClockRate(GHz): 1.036
+pciBusID: 0000:01:00.0
+totalMemory: 4.00GiB freeMemory: 3.33GiB
+2018-08-14 12:00:32.568212: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-08-14 12:00:33.037086: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-14 12:00:33.037521: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971]      0 
+2018-08-14 12:00:33.037970: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:984] 0:   N 
+2018-08-14 12:00:33.038714: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3048 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+INFO:tensorflow:Restoring parameters from checkpoints\i13000_l512.ckpt
+We foruat anculation of the nor fird in algharelel with share changes on the order of thsring tansdducers which product on for bith soop oarabteines werg surtecontion of pereinal nearss sure chewin  h mender of the sicguse cothing the sofarize in the somuration theory by starting with Stokovivel\nreuntiation in ressert re\nfice saly on a channes with features of a modest aspect ratio. Experimental results\nqualitatitid thary cot antheanc tion s cinnss wers siperingilatrsssest relin. pure\ngener, te
+(LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>), LSTMStateTuple(c=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros:0' shape=(1, 512) dtype=float32>, h=<tf.Tensor 'MultiRNNCellZeroState/DropoutWrapperZeroState_1/BasicLSTMCellZeroState/zeros_1:0' shape=(1, 512) dtype=float32>))
+<tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x00000167613A5128>
+X shape: Tensor("Reshape:0", shape=(1, 512), dtype=float32) and W shape: <tf.Variable 'softmax/Variable:0' shape=(512, 63) dtype=float32_ref>
+2018-08-14 12:00:35.699282: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-08-14 12:00:35.699702: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-14 12:00:35.700116: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971]      0 
+2018-08-14 12:00:35.700370: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:984] 0:   N 
+2018-08-14 12:00:35.700740: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3048 MB memory) -> physical GPU (device: 0, name: Quadro M2200, pci bus id: 0000:01:00.0, compute capability: 5.2)
+INFO:tensorflow:Restoring parameters from checkpoints/i12500_l512.ckpt
+We for tha pecuaniot of the lorer farms in a systematic perturbation expansion to describe erthise results an is with restrocs to raccuritaly the latent variable is estimated. A\nprevious study proposed a method that can be used what she heng than foles as e oot thate cow firm anducersine\nhiwher the ratent verGablo is a the nad\nfreis ancow an dementine\nriskls teams in very good agreemevis allows us to construct two\nsemi-algorithms, one searching for a proof of eqpinest of alsuberistile roansl. We offirate new error functions and derive their\nasymptotic forms Calculation of the lared of sisunations with fianusite seling ard sesturing\naralysis al obs we that equisale conpang tharge\nestermabes ox pesy mot lut in aleerian e\the ratel\nrearlint if the lyner firms and the mLofil aralytical solutions while numerical\nresults are in very good agreemevis allows us to construct two\nsemi-algorithms, one searching for a proof of eqmines\nlowalis acd resger ender ingulations. Wo off rate gever
+

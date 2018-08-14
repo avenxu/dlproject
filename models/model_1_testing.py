@@ -92,10 +92,10 @@ samp = sample(checkpoint, 500, lstm_size, len(CharRNN.vocab), prime="We", subjec
 print(samp)
 
 
-# checkpoint = 'checkpoints/i102000_l512.ckpt'
-# samp = sample(checkpoint, 1000, lstm_size, len(CharRNN.vocab), prime="We", subject=subject)
-# print(samp)
-#
+checkpoint = 'checkpoints/i12500_l512.ckpt'
+samp = sample(checkpoint, 1000, lstm_size, len(CharRNN.vocab), prime="We", subject=subject)
+print(samp)
+
 #
 # checkpoint = 'checkpoints/i102000_l512.ckpt'
 # samp = sample(checkpoint, 1000, lstm_size, len(CharRNN.vocab), prime="In", subject=subject)

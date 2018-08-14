@@ -12,7 +12,7 @@ learning_rate = 0.001
 keep_prob = 0.5
 feature_size = 8
 
-epochs = 100
+epochs = 5000
 
 save_every_n = 500
 
