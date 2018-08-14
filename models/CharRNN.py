@@ -6,58 +6,47 @@ import os.path
 # Load data
 abstracts = []
 text = []
-vocab = None
-
-with open('../data/2017abstract.txt', 'r') as f:
+with open('../data/test_abstract.txt', 'r') as f:
+    abstracts = f.readlines()
+with open('../data/test_abstract.txt', 'r') as f:
     text = f.read()
 vocab = sorted(set(text))
 vocab_to_int = {c: i for i, c in enumerate(vocab)}
 int_to_vocab = dict(enumerate(vocab))
-#
-# subs = np.loadtxt('../data/2017subject.txt')
-#
-# data = []
-# encoded = []
-# encoded_file_exist = os.path.isfile('../data/2017encoded_file.txt')
-# encodedWithSub_file_exist = os.path.isfile('../data/2017encoded_WithSub_file.txt')
-# if not encoded_file_exist:
-#     for i in range(len(abstracts)):
-#         encoded = np.array([vocab_to_int[c] for c in abstracts[i]], dtype=np.int32)
-#         encodedWithSub = []
-#         for j in range(len(encoded)):
-#             # concat each char and subject
-#             encodedWithSub.append(np.append(encoded[j], subs[i]))
-#         data.append(encodedWithSub)
-#
-#     # f1 = open("../data/2017encoded_file.txt", "w")
-#     # f1.write(encoded)
-#     # f2 = open("../data/2017data_file.txt", "w")
-#     # f2.write(data)
-# else:
-#     f1 = open("../data/2017encoded_file.txt", "r")
-#     encoded = f1.read()
-#     f2 = open("../data/2017data_file.txt", "r")
-#     data = f2.read()
-#
-# merged_file_exist = os.path.isfile('../data/mergeddata2017.txt')
-# if not merged_file_exist:
-#     print("file not exist")
-#     merged_data = []
-#     for sublist in data:
-#         for item in sublist:
-#             merged_data.append(item)
-#
-#     merged_data_matrix = np.array(merged_data)
-#     np.savetxt("../data/mergeddata2017.txt",merged_data_matrix,fmt='%i')
-# else:
-#     print("file exists")
-#     merged_data_matrix = np.loadtxt("../data/mergeddata2017.txt", dtype=np.int32)
-#
-# text[:100]
-#
-# encoded[:100]
-#
-# len(vocab)
+
+subs = np.loadtxt('../data/test_subject.txt')
+
+data = []
+for i in range(len(abstracts)):
+    encoded = np.array([vocab_to_int[c] for c in abstracts[i]], dtype=np.int32)
+    encodedWithSub = []
+    for j in range(len(encoded)):
+        # concat each char and subject
+        encodedWithSub.append(np.append(encoded[j], subs[i]))
+    data.append(encodedWithSub)
+
+
+merged_file_exist = os.path.isfile('../data/test_merged_data.txt')
+if not merged_file_exist:
+    print("file not exist")
+    merged_data = []
+    for sublist in data:
+        for item in sublist:
+            merged_data.append(item)
+
+    merged_data_matrix = np.array(merged_data)
+    np.savetxt("../data/test_merged_data.txt",merged_data_matrix,fmt='%i')
+else:
+    print("File exists")
+    print("Loading file")
+    merged_data_matrix = np.loadtxt("../data/test_merged_data.txt", dtype=np.int32)
+    print("File loaded")
+
+text[:100]
+
+encoded[:100]
+
+len(vocab)
 
 def get_batches(arr, n_seqs, n_steps, feature_size):
     """
@@ -99,7 +88,7 @@ def build_inputs(num_seqs, num_steps, feature_size):
     :return:
     '''
     inputs = tf.placeholder(tf.int32, shape=(num_seqs, num_steps), name='inputs')
-    subject = tf.placeholder(tf.int32, shape=(num_seqs, num_steps, 8), name='inputs')
+    subject = tf.placeholder(tf.int32, shape=(num_seqs, num_steps, feature_size - 1), name='inputs')
 
     targets = tf.placeholder(tf.int32, shape=(num_seqs, num_steps), name='targets')
 

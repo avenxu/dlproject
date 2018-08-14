@@ -25,7 +25,7 @@ def pick_top_n(preds, vocab_size, top_n=5):
     return c
 
 
-def sample(checkpoint, n_samples, lstm_size, vocab_size, prime="We", subject=[0,0,0,0,0,0,0,0]):
+def sample(checkpoint, n_samples, lstm_size, vocab_size, prime="We", subject=[0,0,0,0,0,0,0]):
     """
     Sampling new text
 
@@ -39,7 +39,7 @@ def sample(checkpoint, n_samples, lstm_size, vocab_size, prime="We", subject=[0,
 
     samples = [c for c in prime]
     # sampling=True means batch of size=1 x 1
-    model = CharRNN.CharRNN(len(CharRNN.vocab), lstm_size=lstm_size, sampling=True)
+    model = CharRNN.CharRNN(len(CharRNN.vocab), lstm_size=lstm_size, sampling=True, feature_size=8)
     saver = tf.train.Saver()
     with tf.Session() as sess:
         # Restore session
@@ -85,24 +85,18 @@ def sample(checkpoint, n_samples, lstm_size, vocab_size, prime="We", subject=[0,
 
 lstm_size = 512
 # 'Physics', 'Mathematics', 'Computer Science', 'Quantitative Biology', 'Quantitative Finance', 'Statistics', 'Electrical Engineering and Systems Science', 'Economics'
-subject=[0,0,0,0,0,0,0,1]
+subject=[1,0,0,0,0,0,0]
 #
 checkpoint = tf.train.latest_checkpoint('checkpoints')
-samp = sample(checkpoint, 1000, lstm_size, len(CharRNN.vocab), prime="We", subject=subject)
+samp = sample(checkpoint, 500, lstm_size, len(CharRNN.vocab), prime="We", subject=subject)
 print(samp)
 
 
-checkpoint = 'checkpoints/i102000_l512.ckpt'
-samp = sample(checkpoint, 1000, lstm_size, len(CharRNN.vocab), prime="We", subject=subject)
-print(samp)
-
-
-checkpoint = 'checkpoints/i102000_l512.ckpt'
-samp = sample(checkpoint, 1000, lstm_size, len(CharRNN.vocab), prime="In", subject=subject)
-print(samp)
-
-# In[24]:
-
-# checkpoint = 'checkpoints/i2000_l512.ckpt'
-# samp = sample(checkpoint, 1000, lstm_size, len(CharRNN.vocab), prime="We", subject=[0,0,1,0,0,0,0,0])
+# checkpoint = 'checkpoints/i102000_l512.ckpt'
+# samp = sample(checkpoint, 1000, lstm_size, len(CharRNN.vocab), prime="We", subject=subject)
+# print(samp)
+#
+#
+# checkpoint = 'checkpoints/i102000_l512.ckpt'
+# samp = sample(checkpoint, 1000, lstm_size, len(CharRNN.vocab), prime="In", subject=subject)
 # print(samp)

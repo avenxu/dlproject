@@ -4,15 +4,15 @@ from models import CharRNN
 
 
 # Hyperparameters
-batch_size = 100
+batch_size = 10
 num_steps = 100
 lstm_size = 512
 num_layers = 2
 learning_rate = 0.001
 keep_prob = 0.5
-feature_size = 9
+feature_size = 8
 
-epochs = 20
+epochs = 100
 
 save_every_n = 500
 
