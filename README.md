@@ -12,36 +12,12 @@ Link: https://github.com/avenxu/arxiv_meta.git
 #### Mile stone
 | Time      |     Task  |   Status   |
 | :--------: | :--------:| :------:     |
-|20180612| Retriving Data  |  Finished      |
-|20180721| basic seq2seq Model|Finished      |
-|20180728| google seq2seq Model|Finished      |
-|20180801| CharRNN|Finished      |
-|20180805|Extract subject and one-hot encoding|Finished      |
-|20180809|CharRNN with conditional input|Finished|
-|20180811|CNN|Finished|
-|20180814|Report|Finished|
+| field1      |   field2  |  field3      |
 
 
 
 #### Work Log
-| Date      |      Task|      Time taken|  Contributer|
-| :-------- | :--------|  :--------     | :--------:  |
-|180621     |Retrieve the data from S3 (Over 500 GB data) | 1 day | Yichuan |
-|180621     |Search on possible structed paper data       | 3+3 h | Yichuan & Jingyun|
-|1800623-0628|Background on text summarization and genenration | 7h | Jingyun|
-|180627     |Load the metadata and apply word2vec     <br> desired dataset keeps symbosl whith [Word vector,Onehot string Category, Onehot for subject]   | 7 h    | Yichuan |
-|180701-180717|Tried to get the data work with the seq2seq model. Code reference: https://github.com/google/seq2seq.git <br> But training is taking much longer than we thought so we decided to try something else (Char RNN/LSTM)| 23 h | Yichuan|
-|180627-0722    | Udnerstand and modify a basic seq2seq with fixed seq length based on https://github.com/NELSONZHAO/zhihu/tree/master/basic_seq2seq?1521452873816. <br> Often problems emerged only after training for several epochs <br> Limited computation power to train| 26 h | Jingyun|
-|180718-0723|Used the RNN model to train on arxiv model: https://github.com/martin-gorner/tensorflow-rnn-shakespeare.git <br> Deep Poetry: Word-Level and Character-Level Language Models for Shakespearean Sonnet | 17 h | Yichuan|
-|180723-0802 |Learn basic pytorch, tried to modify a CharRNN and get the code running. <br> **Failed** with a configuration problem| 9 h | Jingyun|
-|180724-0801|Working on the CharRNN based on the insight from https://github.com/NELSONZHAO/zhihu/tree/master/anna_lstm <br> First time needs to fix some bugs and issues from the old tf version. Including stacking LSTM cells <br> After bug fixes tried on training on the 2017 data and the result was terrible. Tried to figure out why| 11 h | Yichuan|
-|180804|Figured out a bug in the code where the prediction will be random chars | 4 h | Yichuan|
-|180804|Extract the cleaned subject and do one-hot encoding| 4 h | Jingyun | 
-|180808|Fixed the bug and work on adding conditional input Also working on CNN models for text generation| 5 h | Yichuan|
-|180809-0813|Understand the implemented code, read related papers and draw the architecture| 9 h | Jingyun|
-|180812| Presentation slides | 5 h | Yichuan|
-|180814| Report writing | 5+12 h | Yichuan & Jingyun|
-**NOTE** : Almsot all the models are done be Yichuan both in terms of implementation and experiments. Jingyun tried to modify some model but mostly failed and therefore focus more on reading papers. 
+
 
 
 #### Sources used
