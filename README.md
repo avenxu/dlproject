@@ -17,9 +17,7 @@ Link: https://github.com/avenxu/arxiv_meta.git
 
 
 #### Work Log
-<<<<<<< HEAD
 
-=======
 | Date      |      Task|      Time taken|  Contributer|
 | :-------- | :--------|  :--------     | :--------:  |
 |180621     |Retrieve the data from S3 (Over 500 GB data) | 1 day | Yichuan |
@@ -37,8 +35,8 @@ Link: https://github.com/avenxu/arxiv_meta.git
 |180809-0813|Understand the implemented code, read related papers and draw the architecture| 9 h | Jingyun|
 |180812| Presentation slides | 5 h | Yichuan|
 |180814| Report writing | 5+12 h | Yichuan & Jingyun|
-**NOTE** : Almsot all the models are done be Yichuan both in terms of implementation and experiments. Jingyun tried to modify some model but mostly failed and therefore focus more on reading papers. 
->>>>>>> parent of 590af8c... README update
+
+
 
 
 #### Sources used
